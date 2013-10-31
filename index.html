@@ -60,20 +60,28 @@
 						Obtendo os dados da câmara através das APIs de Dados Abertos, conseguimos obter a lista de deputados, comissões e os projetos de lei discutidos na semana. Desenvolvemos um script em bash para obter os dados e gerar as cartas automaticamente em formato SVG.
 					</section>
 					
-					<section>
+					<section data-markdown>
 						O script monitora os dados das APIs da Camâra e utiliza os seguintes XPath para montar o banco de dados do jogo em formato CSV:
 					</section>
 					
-					<section>
-						API ObterDeputados: http://www.camara.gov.br/SitCamaraWS/Deputados.asmx/ObterDeputados
+					<section data-markdown>
+						API ObterDeputados: 
+						
+						- http://www.camara.gov.br/SitCamaraWS/Deputados.asmx/ObterDeputados
 						- //deputados/deputado/nomeParlamentar
 						- //deputados/deputado/partido
 						- //deputados/deputado/uf
 						- //deputados/deputado/urlFoto
-						API ObterOrgaos: http://www.camara.gov.br/SitCamaraWS/Orgaos.asmx/ObterOrgaos
+						
+						API ObterOrgaos: 
+						
+						- http://www.camara.gov.br/SitCamaraWS/Orgaos.asmx/ObterOrgaos
 						- //orgaos/orgao/@sigla
-						- //orgaos/orgao/@descricao 
-						API Orgao ObterPauta: http://www.camara.gov.br/SitCamaraWS/Orgaos.asmx/ObterPauta?IDOrgao=2004&datIni=01/01/2012&datFim=30/04/2012
+						- //orgaos/orgao/@descricao
+						 
+						API Orgao ObterPauta: 
+						
+						- http://www.camara.gov.br/SitCamaraWS/Orgaos.asmx/ObterPauta?IDOrgao=2004&datIni=01/01/2012&datFim=30/04/2012
 						- //pauta/reuniao/proposicoes/proposicao/sigla
 						- //pauta/reuniao/proposicoes/proposicao/ementa
 					</section>
