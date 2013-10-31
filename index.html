@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Deliberatório</title>
+
+		<meta name="description" content="Aula ministrada no Programa Cultural de Tucumã e Parauapebas">
+		<meta name="author" content="Luciano Santa Brígida">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<section>
+						<h1>Deliberatório</h1>
+						
+						
+					</section>
+					
+					<section data-markdown>
+					## Objetivo
+
+					Produzir um jogo de cartas a partir dos dados abertos do legislativo, simulando o processo de discussão e deliberação das proposições na Camara
+					</section>
+					
+				</section>
+
+				<section>
+					<section data-markdown>
+						## Como foi produzido
+					</section>
+					
+					<section data-markdown>
+						Obtendo os dados da câmara através das APIs de Dados Abertos, conseguimos obter a lista de deputados, comissões e os projetos de lei discutidos na semana. Desenvolvemos um script em bash para obter os dados e gerar as cartas automaticamente em formato SVG.
+					</section>
+					
+					<section>
+						O script monitora os dados das APIs da Camâra e utiliza os seguintes XPath para montar o banco de dados do jogo em formato CSV:
+					</section>
+					
+					<section>
+						API ObterDeputados: http://www.camara.gov.br/SitCamaraWS/Deputados.asmx/ObterDeputados
+						- //deputados/deputado/nomeParlamentar
+						- //deputados/deputado/partido
+						- //deputados/deputado/uf
+						- //deputados/deputado/urlFoto
+						API ObterOrgaos: http://www.camara.gov.br/SitCamaraWS/Orgaos.asmx/ObterOrgaos
+						- //orgaos/orgao/@sigla
+						- //orgaos/orgao/@descricao 
+						API Orgao ObterPauta: http://www.camara.gov.br/SitCamaraWS/Orgaos.asmx/ObterPauta?IDOrgao=2004&datIni=01/01/2012&datFim=30/04/2012
+						- //pauta/reuniao/proposicoes/proposicao/sigla
+						- //pauta/reuniao/proposicoes/proposicao/ementa
+					</section>
+					
+					<section>
+						Algumas cartas do jogo foram criadas sem necessidade da API, pois representam a influência que a sociedade civil pode ter nos processos de deliberação da Camara, como as cartas de Mídias e Manifestação Popular, capazes de modificar os resultados do jogo.
+
+						Em seguida, utilizando o Inkscape produzimos o visual das cartas e geramos dinamicamente uma versão impressa. O jogo foi testado pelos desenvolvedores e participantes do Hackathon.
+					</section>
+				</section>
+
+				<section>
+					<section data-markdown>
+						## Como Funciona
+					
+					</section>
+					
+					<section data-markdown>
+						O jogo deve ser jogado por um ou mais jogadores. Cada jogador assume o desafio de articular apoios para seu lado a fim de aprovar ou reprovar as proposições em jogo. Para isso, deve conquistar o apoio de diferentes Camadas da Sociedade, Deputados, Partidos e Órgãos da Camara.
+					</section>
+					
+					<section>
+						O apoio aos projetos de lei está representado nas cartas por valores numéricos que regulamentam a lógica do jogo, inspirada no processo real de deliberação da CD.
+					</section>
+					<section data-markdown>
+						Existem diferentes tipos de cartas disponíveis para o jogador. São elas:
+						
+						- Deputados: somam de 1 a 5 pontos para a aprovação das proposições em jogo
+						- Órgãos: somam 10 pontos se a proposição em jogo estiver em discussão naquele órgão
+						- Proposições: São o foco central do jogo, cada Proposição tem uma pontuação que deve ser o resultado dos deputados e órgãos na mesa
+						- Eventos: São cartas que modificam os resultados do jogo de diferentes formas como, por exemplo, alterando a pontuação de uma proposição ou permitindo troca de carta entre os jogadores. O efeito descrito em cada uma dessas cartas pode se sobrepor a outras regras.
+					</section>
+						
+					<section data-markdown>
+						O jogo começa com dois baralhos: um com as proposições da semana gerado automaticamente, e outro contendo as demais cartas do jogo. O baralho das proposições Fica a Direita e os das demais cartas à esquerda. A proposição em debate fica no centro da mesa e cada jogador posiciona suas cartas de deputados e proposições próximas a si, conforme indicado no Diagrama.
+						
+					</section>
+						
+					<section>
+						<img src="img/diagrama-jogo.png" />
+					</section>
+					
+					<section data-markdown>
+						O Deliberatório funciona em turnos. No primeiro turno, cada jogador compra 4 cartas do Baralho à Esquerda para a sua Mão. Em seguida um dos dois jogadores deve puxar uma carta do topo do Baralho de Proposições e posiciona-la no centro da mesa. O jogador que seleciona a proposição é o primeiro a jogar e no seu turno, ele pode baixar apenas 01 carta de Deputado por turno ou 01 carta de Comissão. Também pode baixar uma carta de evento por turno, a menos que o texto da carta de Evento estabeleça regra diferente. Na etapa final do turno, o jogador soma os pontos de suas cartas na mesa e verifica se conseguiu ou não aprovar a Proposição. 
+					</section>
+					
+					<section data-markdown>
+						Em seguida, dá-se início o turno do segundo jogador, onde ele repete as mesmas etapas descritas anteriormente. Ao voltar o turno do primeiro jogador, este agora só saca 01 carta do baralho à esquerda, e assim por diante para cada jogador.
+					</section>
+					
+					<section data-markdown>
+						O usuário poderá através do site deliberatório.com.br gerar as cartas, a partir das pautas em discussão na semana do acesso, e imprimi-las para uso offline. Com isso, esperamos levar o jogo para além da necessidade de conexão rápida que permitiria a jogbilidade multiplayer e alcançar comunidades para que possam se beneficiar do aprendizado de processo legislativo e das pautas em discussão na camara.
+					</section>
+				</section>
+
+				<section>
+					<section data-markdown>
+						## Modalidades de Jogo
+					</section>
+					
+					<section data-markdown>
+						### Semana Decisiva
+						
+						O jogo só termina quando todas as proposições do baralho forem discutidas/jogadas. Vence quem aprovar o maior número de Proposições.
+
+					</section>
+					
+					<section data-markdown>
+						### Disputa Eleitoral
+						
+						O jogo termina quando o primeiro jogador aprovar 5 Proposições.
+					</section>
+					
+				</section>
+				
+				<section>
+					<section data-markdown>
+						## Etapas Futuras
+					</section>
+					
+					<section data-markdown>
+						- Migrar o script em bash para uma linguagem web
+						- Novas Cartas: o repositório estará aberto para receber propostas de novas cartas
+						- Versão digital do jogo: estará disponível no domínio deliberatorio.com.br
+						- API com os resultados agregados do jogo: permitindo consultar padrões de comportamento dos usuários sem identifica-los
+					</section>
+					
+					
+				</section>
+
+				<section data-markdown>
+					# Vamos Jogar?
+					
+					http://deliberatorio.com.br
+				</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
