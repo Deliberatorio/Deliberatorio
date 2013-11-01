@@ -44,3 +44,10 @@ O próximo passo é abrir o Inkscape com a extensão Generator funcionando, segu
 
 O resultado será vários cards em .PDF individuais, você pode usar o "pdfjoin" para juntar todos PDFs em um único arquivo de impressão, dispondo lado-lado, a quantidade X por folha A3 ou A4.
 
+
+Sobre os Branchs:
+
+- master - Versão Estável do Script para gerar o baralho;
+- exemplo-dados - Dados de exemplo;
+- scripts-web - Versão em desenvolvimento da aplicação Web;
+
