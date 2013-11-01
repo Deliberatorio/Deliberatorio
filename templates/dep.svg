@@ -1908,14 +1908,6 @@
          horiz-adv-x="1792"
          unicode="" />
     </font>
-    <filter
-       inkscape:collect="always"
-       id="filter7937">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.3203391"
-         id="feGaussianBlur7939" />
-    </filter>
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath7966">
@@ -1938,7 +1930,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
      inkscape:cx="300"
-     inkscape:cy="805.98903"
+     inkscape:cy="321.11581"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -1966,7 +1958,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -2029,34 +2021,14 @@
          x="-1131.4286"
          y="266.64789" /></text>
     <image
-       sodipodi:absref="/home/valessio/Dropbox/Deliberatorio/Cards_V0.1/data/templates/./fotos/%VAR_6%"
+       sodipodi:absref="/home/valessio/Desenvolvimento/deliberatorio/templates/./fotos/%VAR_6%"
        xlink:href="./fotos/%VAR_6%"
-       height="321.03214"
-       width="240.77412"
-       clip-path="url(#clipPath7966)"
-       id="image6695"
+       y="162.26164"
        x="88.571426"
-       y="162.26164" />
-    <g
-       id="g6728"
-       transform="matrix(3.5180175,0,0,3.5180175,206.95802,554.60017)">
-      <path
-         id="path6714"
-         d="M 44.021,53.015 C 41.336,50.516 40.063,48.421 40.078,46.532 L 27.492,46.49 C 13.461,46.544 1.187,69.854 0.723,84.597 c 4.291,0.001 22.51,0.011 42.708,0.015 l -3.446,-4.077 4.036,-27.52 z"
-         inkscape:connector-curvature="0" />
-      <path
-         id="path6716"
-         d="M 85.318,53.255 C 80.935,48.866 76.363,46.64 71.728,46.64 L 59.391,46.598 c -0.016,1.871 -1.29,3.944 -3.944,6.417 l 4.035,27.521 -3.447,4.078 C 73.056,84.615 89.747,84.611 99.276,84.597 98.934,75.731 93.667,61.617 85.318,53.255 z"
-         inkscape:connector-curvature="0" />
-      <path
-         id="path6718"
-         d="m 49.622,38.711 0.106,0 0.119,0 c 10.948,0 19.895,-9.19 19.94,-20.487 C 69.74,6.982 60.742,-2.208 49.729,-2.251 44.385,-2.23 39.354,-0.114 35.574,3.707 c -3.836,3.876 -5.929,9.03 -5.894,14.513 -0.036,5.566 2.067,10.761 5.922,14.64 3.748,3.774 8.728,5.851 14.02,5.851 z"
-         inkscape:connector-curvature="0" />
-      <path
-         id="path6720"
-         d="m 52.207,50.882 c 3.057,-2.678 3.392,-3.976 3.423,-4.297 0.006,-0.054 0.003,-0.082 0.003,-0.084 -0.056,-0.283 -0.267,-0.574 -0.576,-0.857 -0.372,-0.338 -0.895,-0.663 -1.507,-0.943 -1.133,-0.52 -2.554,-0.88 -3.817,-0.88 -1.239,0 -2.634,0.35 -3.757,0.855 -0.613,0.274 -1.143,0.596 -1.525,0.932 -0.334,0.293 -0.558,0.598 -0.616,0.894 0,0 -10e-4,0.018 0,0.044 0.009,0.235 0.22,1.528 3.427,4.337 l 0.77,0.674 -4.085,27.847 4.403,5.211 0.794,0.938 0.591,0.701 0.592,-0.7 0.793,-0.938 4.404,-5.21 -4.084,-27.849 0.767,-0.675 z"
-         inkscape:connector-curvature="0" />
-    </g>
+       id="image6695"
+       clip-path="url(#clipPath7966)"
+       width="240.77412"
+       height="321.03214" />
     <text
        xml:space="preserve"
        style="font-size:144px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:FontAwesome;-inkscape-font-specification:FontAwesome"
@@ -2068,18 +2040,6 @@
          id="tspan6736"
          x="145.71429"
          y="860.93359" /></text>
-    <text
-       xml:space="preserve"
-       style="font-size:223.1725769px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
-       x="209.02206"
-       y="883.224"
-       id="text6738"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan6740"
-         x="209.02206"
-         y="883.224"
-         style="font-size:18.59771347px">Ícone por Devochkina Oxana do Noun Project </tspan></text>
     <g
        id="g6874"
        transform="translate(490.26761,170.27149)">
@@ -2119,14 +2079,14 @@
            y="207.87466"
            style="font-size:58.02212524px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:end;text-decoration:none;line-height:100%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:end;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Trebuchet MS;-inkscape-font-specification:Trebuchet MS" /></flowRegion><flowPara
          id="flowPara3471">%VAR_5%</flowPara></flowRoot>    <image
-       sodipodi:absref="/home/valessio/Dropbox/Deliberatorio/Cards_V0.1/data/templates/./partidos/%VAR_3%.jpg"
+       sodipodi:absref="/home/valessio/Desenvolvimento/deliberatorio/templates/./partidos/%VAR_3%.jpg"
        xlink:href="./partidos/%VAR_3%.jpg"
-       clip-path="none"
-       y="365.29599"
-       x="254.23642"
-       id="image3473"
+       width="104.8102"
        height="104.8102"
-       width="104.8102" />
+       id="image3473"
+       x="254.23642"
+       y="365.29599"
+       clip-path="none" />
     <rect
        style="color:#000000;fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:4, 2;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect6083"
@@ -2134,5 +2094,14 @@
        height="1029.5475"
        x="25.564911"
        y="11.407349" />
+    <image
+       sodipodi:absref="/home/valessio/Desenvolvimento/deliberatorio/templates/./icones/%VAR_7%.svg"
+       xlink:href="./icones/%VAR_7%.svg"
+       clip-path="none"
+       y="529.14478"
+       x="191.35277"
+       id="image3473-3"
+       height="361.38895"
+       width="361.38895" />
   </g>
 </svg>
