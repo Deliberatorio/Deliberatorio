@@ -10,18 +10,18 @@ Documentação: http://deliberatorio.com.br/doc
 
 Entendendo a estrutura dos diretórios e arquivos:
 
-./deliberatorio.sh - Script para gerar o CSV com pauta atual da Câmara dos Deputados e dados essenciais dos cartões;
-./event.csv - Base das cartas especiais dos eventos;
-./LICENSE - Licenciamento
-./README.md - Este arquivo
-./templates/ - Diretório com o template dos cartões
-   dep.svg - Template do cartão para Deputados
-   event.svg - Template do cartão para Eventos
-   org.svg - Template do cartão para Órgãos
-   prop.svg - Template do cartão para Proposições
-   fotos/ - Diretório com foto dos Deputados (atualizado via API da Câmara dos Deputados)
-   icones/ - Diretório com icones utilizado nas cartas
-   partidos/ - Diretório com logos dos Partidos Brasileiros
+- ./deliberatorio.sh - Script para gerar o CSV com pauta atual da Câmara dos Deputados e dados essenciais dos cartões;
+- ./event.csv - Base das cartas especiais dos eventos;
+- ./LICENSE - Licenciamento
+- ./README.md - Este arquivo
+- ./templates/ - Diretório com o template dos cartões
+  - dep.svg - Template do cartão para Deputados
+  - event.svg - Template do cartão para Eventos
+  - org.svg - Template do cartão para Órgãos
+  - prop.svg - Template do cartão para Proposições
+  - fotos/ - Diretório com foto dos Deputados (atualizado via API da Câmara dos Deputados)
+  - icones/ - Diretório com icones utilizado nas cartas
+  - partidos/ - Diretório com logos dos Partidos Brasileiros
 
 
 Dependências:
