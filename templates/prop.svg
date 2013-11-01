@@ -22,14 +22,13 @@
   <defs
      id="defs4">
     <linearGradient
-       inkscape:collect="always"
        id="linearGradient8291">
       <stop
          style="stop-color:#8ae234;stop-opacity:1;"
          offset="0"
          id="stop8293" />
       <stop
-         style="stop-color:#8ae234;stop-opacity:0;"
+         style="stop-color:#ebffd8;stop-opacity:1;"
          offset="1"
          id="stop8295" />
     </linearGradient>
@@ -1926,19 +1925,18 @@
        id="linearGradient7257"
        gradientUnits="userSpaceOnUse"
        x1="480"
-       y1="115.19135"
+       y1="91.702332"
        x2="480"
-       y2="223.92505"
+       y2="226.34962"
        gradientTransform="matrix(1.0392785,0,0,2.0370239,-35.916005,-241.74323)" />
     <linearGradient
-       inkscape:collect="always"
        id="linearGradient7247">
       <stop
          style="stop-color:#000080;stop-opacity:1;"
          offset="0"
          id="stop7249" />
       <stop
-         style="stop-color:#000080;stop-opacity:0;"
+         style="stop-color:#ffffff;stop-opacity:1;"
          offset="1"
          id="stop7251" />
     </linearGradient>
@@ -1967,7 +1965,7 @@
        xlink:href="#linearGradient8291"
        id="linearGradient8297"
        x1="330.60938"
-       y1="94.287971"
+       y1="71.005623"
        x2="330.60938"
        y2="216.61166"
        gradientUnits="userSpaceOnUse" />
@@ -1977,11 +1975,11 @@
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="0.0"
+     inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.42950992"
-     inkscape:cx="1183.9783"
-     inkscape:cy="357.39363"
+     inkscape:zoom="0.21475496"
+     inkscape:cx="1118.1423"
+     inkscape:cy="126.93463"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -2023,7 +2021,7 @@
      inkscape:groupmode="layer"
      id="layer1">
     <path
-       style="opacity:0.33823105;fill:url(#linearGradient8297);fill-opacity:1;stroke:#000000;stroke-width:2.49524665;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="opacity:0.33823104999999998;fill:url(#linearGradient8297);fill-opacity:1;stroke:#000000;stroke-width:2.49524664999999990;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        d="m 89.875,36.8125 0,182.21875 335.625,0 0,-49.1875 c 0,-10.21391 8.22359,-18.4375 18.4375,-18.4375 l 211.71875,0 c 10.21391,0 18.40625,8.22359 18.40625,18.4375 l 0,49.1875 7.5,0 0,-182.21875 z"
        id="rect5886"
        inkscape:connector-curvature="0"
@@ -2221,20 +2219,7 @@
            height="194.05945"
            x="107.16716"
            y="448.94351" /></flowRegion><flowPara
-         id="flowPara7679" /></flowRoot>    <flowRoot
-       xml:space="preserve"
-       id="flowRoot7681"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:139.99999762%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
-       transform="translate(0.008929,-177.10359)"><flowRegion
-         id="flowRegion7683"><rect
-           id="rect7685"
-           width="588.57123"
-           height="543.91675"
-           x="88.571426"
-           y="433.13867"
-           style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:139.99999762%;writing-mode:lr-tb;text-anchor:start;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'" /></flowRegion><flowPara
-         id="flowPara7687"
-         style="font-size:43px;text-align:start;text-anchor:start">     %VAR_4% </flowPara></flowRoot>    <text
+         id="flowPara7679" /></flowRoot>    <text
        xml:space="preserve"
        style="font-size:126.82041168px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:129.99999523%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Trebuchet MS;-inkscape-font-specification:Trebuchet MS"
        x="465.01724"
@@ -2291,5 +2276,18 @@
            x="-268.70056"
            y="207.87466"
            style="font-size:58.02212524px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:100%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Trebuchet MS;-inkscape-font-specification:Trebuchet MS" /></flowRegion><flowPara
-         id="flowPara3471">%VAR_3%</flowPara></flowRoot>  </g>
+         id="flowPara3471">%VAR_3%</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot7681"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:139.99999762%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+       transform="translate(0.008929,-177.10359)"><flowRegion
+         id="flowRegion7683"><rect
+           id="rect7685"
+           width="588.57123"
+           height="543.91675"
+           x="88.571426"
+           y="433.13867"
+           style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:139.99999762%;writing-mode:lr-tb;text-anchor:start;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'" /></flowRegion><flowPara
+         id="flowPara7687"
+         style="font-size:43px;text-align:justify;text-anchor:start">%VAR_4% </flowPara></flowRoot>  </g>
 </svg>

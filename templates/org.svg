@@ -22,14 +22,13 @@
   <defs
      id="defs4">
     <linearGradient
-       inkscape:collect="always"
        id="linearGradient8454">
       <stop
          style="stop-color:#000080;stop-opacity:1;"
          offset="0"
          id="stop8456" />
       <stop
-         style="stop-color:#000080;stop-opacity:0;"
+         style="stop-color:#ffffff;stop-opacity:1;"
          offset="1"
          id="stop8458" />
     </linearGradient>
@@ -1957,9 +1956,9 @@
        xlink:href="#linearGradient8454"
        id="linearGradient8460"
        x1="169.30719"
-       y1="618.17114"
+       y1="284.32639"
        x2="169.30719"
-       y2="1060.6893"
+       y2="998.21619"
        gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
@@ -1967,10 +1966,10 @@
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="0.0"
+     inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="0.36619826"
-     inkscape:cx="296.80646"
+     inkscape:cx="-318.98019"
      inkscape:cy="552.97511"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -2012,6 +2011,13 @@
      inkscape:label="Camada 1"
      inkscape:groupmode="layer"
      id="layer1">
+    <rect
+       style="opacity:1;fill:url(#linearGradient8460);fill-opacity:1;stroke:#000000;stroke-width:3.59999989999999981;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect5886"
+       width="588.57141"
+       height="380"
+       x="88.571426"
+       y="562.36218" />
     <g
        id="g6874-8"
        transform="matrix(4.8167563,0,0,4.8167563,138.83732,515.89332)"
@@ -2066,13 +2072,6 @@
          x="341.68527"
          y="999.11279"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Trebuchet MS;-inkscape-font-specification:Trebuchet MS" /></text>
-    <rect
-       style="opacity:0.33823104999999998;fill:url(#linearGradient8460);fill-opacity:1;stroke:#000000;stroke-width:3.59999989999999981;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       id="rect5886"
-       width="588.57141"
-       height="380"
-       x="88.571426"
-       y="562.36218" />
     <text
        xml:space="preserve"
        style="font-size:144px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:FontAwesome;-inkscape-font-specification:FontAwesome"
