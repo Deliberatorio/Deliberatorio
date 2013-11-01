@@ -1,0 +1,25 @@
+EVENTO TIPO;EVENTO NOME;EVENTO DESC
+Manifestação Popular;Abaixo Assinado;Reduz 01 ponto da proposição em jogo
+Mídia;Anúncio na TV;Um anuncio conseguiu apoio da população. Reduza 1 ponto da proposição
+Pizza;Brócolis com Quatro Queijos;Ninguém baixa deputados na mesa por 3 turnos
+Pizza;Calabresa;A proposição atual é automaticamente reprovada
+Coligação;Compartillhar é Legal;Troque um deputado qualquer seu por um deputado qualquer do jogador alvo
+Coligação;Dados Abertos;Conquista 2 deputados do jogador alvo para a sua mesa
+Manifestação Popular;DDOS;Cartas de Mídia não podem ser baixadas até a próxima proposição
+Coligação;Eficiência Legislativa;Aprova automaticamente uma Proposição
+Manifestação Popular;Greve;Pula 02 turnos do jogador alvo
+Coligação;Hackers na Camara;Conquista 01 deputado do jogador alvo para a sua mesa
+Mídia;Imprensa Marrom;Uma notícia criticou o projeto. Acrescente 1 ponto à proposição
+Mídia;Informe Publicitário;Um informe conquistou apoiadores.  Reduza 2 pontos da proposição
+Pizza;Muçarela;Pula o turno do jogador alvo
+Manifestação Popular;Passeata;Nenhum deputado entra em jogo por 2 turnos e reduz 02 pontos da proposição em jogo
+Pizza;Pepperoni;O jogador alvo fica proibido de jogar proposiçoes por 2 turnos
+Pizza;Quatro Queijos;Cancela uma ação de Coligação. Pode ser baixada no turno de outro jogador.
+Mídia;Reportagem Investigativa;Uma reportagem revelou falhas na Proposição. Acrescente 2 pontos à proposição
+Coligação;Transparência Total;Conquista 01 Comissão do jogador alvo para a sua mesa
+Comitê Eleitoral;;Resgata 01 coligação já usada para sua mão
+Comitê Eleitoral;;Resgata 01 Deputado de rodadas anteriores para sua mão
+Comitê Eleitoral;;Resgata 01 Deputado de rodadas anteriores para sua mesa
+Comitê Eleitoral;;Resgata 02 coligações já usadas para sua mão
+Comitê Eleitoral;;Resgata 02 Deputado de rodadas anteriores para sua mão
+Comitê Eleitoral;;Resgata 02 Deputados de rodadas anteriores para sua mesa
