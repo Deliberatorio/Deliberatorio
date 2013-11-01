@@ -24,14 +24,14 @@ Entendendo a estrutura dos diretórios e arquivos:
   - partidos/ - Diretório com logos dos Partidos Brasileiros
 
 
-Dependências:
+#### Dependências:
 
 - xmlstarlet - conjunto de ferramentas XML de linha de comandos, <http://xmlstar.sourceforge.net/>
 - Inkscape - software para edição vertorial SVG, <http://www.inkscape.org>
 - InkscapeGenerator - extensão para Inkscape gerar mala direta, <http://wiki.colivre.net/Aurium/InkscapeGenerator>
 
 
-Como instalar/gerar os cartões?
+#### Como instalar/gerar os cartões?
 
 Ao instalar as dependêncais necessárias, rode o script "deliberatorio.sh" para gerar um CSV das atividades atuais que estão pautada para esta próxima semana na Câmara dos Deputados.
 
@@ -45,9 +45,42 @@ O próximo passo é abrir o Inkscape com a extensão Generator funcionando, segu
 O resultado será vários cards em .PDF individuais, você pode usar o "pdfjoin" para juntar todos PDFs em um único arquivo de impressão, dispondo lado-lado, a quantidade X por folha A3 ou A4.
 
 
-Sobre os Branchs:
+#### Sobre os Branchs:
 
 - master - Versão Estável do Script para gerar o baralho;
 - exemplo-dados - Dados de exemplo;
 - scripts-web - Versão em desenvolvimento da aplicação Web;
+
+---
+
+### Licença GPL V3
+
+Leia o [texto integral da licença](https://github.com/sbvirtual/deliberatorio/blob/master/LICENSE)
+
+    
+    Este programa é um software livre; você pode redistribuí-lo e/ou 
+
+    modificá-lo dentro dos termos da Licença Pública Geral GNU como 
+
+    publicada pela Fundação do Software Livre (FSF); na versão 3 da 
+
+    Licença, ou superior.
+
+
+
+    Este programa é distribuído na esperança de que possa ser útil, 
+
+    mas SEM NENHUMA GARANTIA; sem uma garantia implícita de ADEQUAÇÃO a qualquer
+
+    MERCADO ou APLICAÇÃO EM PARTICULAR. Veja a
+
+    Licença Pública Geral GNU para maiores detalhes.
+
+
+
+    Você deve ter recebido uma cópia da Licença Pública Geral GNU
+
+    junto com este programa, se não, escreva para a Fundação do Software
+
+    Livre(FSF) Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
