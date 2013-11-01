@@ -50,7 +50,7 @@ wget $URL_ORGAOS -O $TMP_ORGAOS 2> /dev/null
 COUNT=0
 for idOrgao in `xmlstarlet sel -t -v "//orgaos/orgao/@id" $TMP_ORGAOS` ; do
     let COUNT++
-    siglaOrgao=$(xmlstarlet sel -t -v "//orgaos/orgao[$COUNT]/@sigla" $TMP_ORGAOS | sed s/\ //g)
+    siglaOrgao=$(xmlstarlet sel -t -v "//orgaos/orgao[$COUNT]/@sigla" $TMP_ORGAOS)
     descricaoOrgao=$(xmlstarlet sel -t -v "//orgaos/orgao[$COUNT]/@descricao" $TMP_ORGAOS)
 
     echo $idOrgao\;$siglaOrgao\;$descricaoOrgao >> $CSV_ORGAOS
@@ -65,8 +65,8 @@ for idOrgao in `xmlstarlet sel -t -v "//orgaos/orgao/@id" $TMP_ORGAOS` ; do
         let PautaCOUNT++
         ementaPauta=$(xmlstarlet sel -t -v "//pauta/reuniao/proposicoes/proposicao[$PautaCOUNT]/ementa" $TMP_PAUTAS)
         pontoPauta=$(echo $idPauta | rev | cut -c -2 | rev)
-        nomePauta=$(echo $idPauta | sed s/\//:/g)
-        echo $pontoPauta\;$idPauta\;$siglaOrgao\;$ementaPauta\;$nomePauta \
+        nomePauta=$(echo $idPauta | sed s/"\/"/":"/g)
+        echo $pontoPauta\;$(echo $idPauta | sed s/_/\ /g)\;$siglaOrgao\;$ementaPauta\;$nomePauta \
             | grep -E 'PL_|PEC_' \
             | grep -vE '(Altera|nova redação|revoga|Acrescenta|REQ_)'
     done | head -5 >> $CSV_PAUTAS
