@@ -95,13 +95,17 @@ for ideCadastro in `xmlstarlet sel -t -v "//deputados/deputado/ideCadastro" $TMP
     echo $ideCadastro\;$nomeParlamentar\;$partidoDeputado\;$ufDeputado\;$siglaDeputado\;$urlFoto\;$sexoDep
 done >> $CSV_DEPUTADOS
 
-# Gera cards para Orgaos somente na Pauta
-for cardOrgao in `cat $CSV_PAUTAS | cut -d";" -f 3| sort | uniq`; do
-    grep $cardOrgao $CSV_ORGAOS
-done > $CSV_CARDORG
+# Gera lista de Orgaos na Pauta
+listOrgPauta=`cat $CSV_PAUTAS | cut -d";" -f 3| sort | uniq`
 
-# Gerar cards para Deputados somente na Pauta
-for cardOrgao in `cat $CSV_PAUTAS | cut -d";" -f 3| sort | uniq`; do
-    grep $cardOrgao $CSV_DEPUTADOS
-done > $CSV_CARDDEP
+# Função para Gerar CSV na Pauta
+function gerar_cards {
+for cardOrgao in $listOrgPauta; do
+    grep $cardOrgao $1
+done > $1
+}
+
+# Gera CSV de Orgaos e Deputados na Pauta
+gerar_cards $CSV_ORGAOS
+gerar_cards $CSV_CARDDEP
 
