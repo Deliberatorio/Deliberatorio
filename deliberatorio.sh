@@ -40,23 +40,37 @@ CSV_CARDDEP="$PWD/dep.csv"
 TMP_DEPUTADOS=$( mktemp )
 TMP_DETALHES=$( mktemp )
 
-# LIMPA
+# Limpa dados anteriores
 rm -i $CSV_ORGAOS $CSV_PAUTAS $CSV_DEPUTADOS $CSV_CARDORG $CSV_CARDDEP
 
 # OBTER ORGAOS
-wget $URL_ORGAOS -O $TMP_ORGAOS 2> /dev/null
+wget $URL_ORGAOS -O $TMP_ORGAOS
 COUNT=0
+TOTAL=`cat $TMP_ORGAOS | wc -l`
+ProgBar="[=======================================================================]"
+
+echo "
+
+    Obtendo Pauta da Semana:"
+
 for idOrgao in `xmlstarlet sel -t -v "//orgaos/orgao/@id" $TMP_ORGAOS` ; do
     let COUNT++
+
+    # Parse no XML da sigla e descrição do Orgão
     siglaOrgao=$(xmlstarlet sel -t -v "//orgaos/orgao[$COUNT]/@sigla" $TMP_ORGAOS)
     descricaoOrgao=$(xmlstarlet sel -t -v "//orgaos/orgao[$COUNT]/@descricao" $TMP_ORGAOS)
 
+    # Plotando no CSV dos Orgãos
     echo $idOrgao\;$siglaOrgao\;$descricaoOrgao >> $CSV_ORGAOS
 
-    #OBTER PAUTAS
+    # OBTER PAUTAS
     URL_PAUTAS="http://www.camara.gov.br/SitCamaraWS/Orgaos.asmx/ObterPauta?IDOrgao=$idOrgao&datIni=$(date +%d\/%m\/%Y)&datFim=$(date +%d\/%m\/%Y -d "+10 days")"
     wget $URL_PAUTAS -O $TMP_PAUTAS 2> /dev/null
     PautaCOUNT=0
+
+    # Progresso da Pauta
+    ProgPauta=$(( $COUNT * 73 / $TOTAL ))
+    printf "\r%3d.%1d%% %.${ProgPauta}s" $(( $COUNT * 100 / $TOTAL )) $(( ($COUNT * 1000 / $TOTAL) % 10 )) $ProgBar
 
     # Obter detalhes da Pauta
     for idPauta in `xmlstarlet sel -t -v "//pauta/reuniao/proposicoes/proposicao/sigla" $TMP_PAUTAS | sed s/\ /_/g` ; do
@@ -71,41 +85,63 @@ for idOrgao in `xmlstarlet sel -t -v "//orgaos/orgao/@id" $TMP_ORGAOS` ; do
 
 done # End idOrgaos
 
+echo "
+
+    Obtenção das pautas, finalizado.
+
+"
+
 # OBTER DEPUTADOS
-wget $URL_DEPUTADOS -O $TMP_DEPUTADOS 2> /dev/null
+wget $URL_DEPUTADOS -O $TMP_DEPUTADOS
 COUNT=0
+TOTAL=`cat $TMP_DEPUTADOS | wc -l`
+
+echo "
+
+    Obtendo Deputados:"
+
 for ideCadastro in `xmlstarlet sel -t -v "//deputados/deputado/ideCadastro" $TMP_DEPUTADOS` ; do
     let COUNT++
+
+    # Parser XML dos detalhes do Deputado
     nomeParlamentar=$(xmlstarlet sel -t -v "//deputados/deputado[$COUNT]/nomeParlamentar" $TMP_DEPUTADOS)
     partidoDeputado=$(xmlstarlet sel -t -v "//deputados/deputado[$COUNT]/partido" $TMP_DEPUTADOS)
     ufDeputado=$(xmlstarlet sel -t -v "//deputados/deputado[$COUNT]/uf" $TMP_DEPUTADOS)
     urlFoto=$(xmlstarlet sel -t -v "//deputados/deputado[$COUNT]/urlFoto" $TMP_DEPUTADOS)
     sexoDep=$(xmlstarlet sel -t -v "/deputados/deputado[$COUNT]/sexo" $TMP_DEPUTADOS)
 
-    # VER DETALHES DEPUTADO
-    URL_DETALHES="http://www.camara.gov.br/SitCamaraWS/Deputados.asmx/ObterDetalhesDeputado?ideCadastro=$ideCadastro&numLegislatura="
-    wget $URL_DETALHES -O $TMP_DETALHES 2> /dev/null
-    DetalhesCOUNT=0
+    # Capturando detalhe do deputado no orgão
+    URL_DETALHE="http://www.camara.gov.br/SitCamaraWS/Deputados.asmx/ObterDetalhesDeputado?ideCadastro=$ideCadastro&numLegislatura="
+    siglaDeputado=$(lynx -source "$URL_DETALHE" | xmlstarlet sel -t -v "//Deputados/Deputado/comissoes/comissao[last()]/siglaComissao" | uniq)
 
-    for idOrgaoCD in `xmlstarlet sel -t -v "//Deputados/Deputado/comissoes/comissao/idOrgaoLegislativoCD" $TMP_DETALHES` ; do
-        let DetalhesCOUNT++
-        siglaDeputado=$(xmlstarlet sel -t -v "//Deputados/Deputado/comissoes/comissao[last()]/siglaComissao" $TMP_DETALHES)
+    # Gerando CSV dos Deputados
+    echo $ideCadastro\;$nomeParlamentar\;$partidoDeputado\;$ufDeputado\;$siglaDeputado\;$urlFoto\;$sexoDep >> $CSV_DEPUTADOS
 
-    done
-    echo $ideCadastro\;$nomeParlamentar\;$partidoDeputado\;$ufDeputado\;$siglaDeputado\;$urlFoto\;$sexoDep
-done >> $CSV_DEPUTADOS
+    # Progresso dos Deputados
+    ProgDeputado=$(( $COUNT * 73 / $TOTAL ))
+    printf "\r%3d.%1d%% %.${ProgPauta}s" $(( $COUNT * 100 / $TOTAL )) $(( ($COUNT * 1000 / $TOTAL) % 10 )) $ProgBar
+
+done #ideCadastro
+
+echo "
+
+Deputados obtidos com sucesso.
+
+"
 
 # Gera lista de Orgaos na Pauta
 listOrgPauta=`cat $CSV_PAUTAS | cut -d";" -f 3| sort | uniq`
 
+echo "Gerando CSV dos cartões para o jogo."
 # Função para Gerar CSV na Pauta
 function gerar_cards {
 for cardOrgao in $listOrgPauta; do
     grep $cardOrgao $1
-done > $1
+done > $2
 }
 
 # Gera CSV de Orgaos e Deputados na Pauta
-gerar_cards $CSV_ORGAOS
-gerar_cards $CSV_CARDDEP
+gerar_cards $CSV_ORGAOS $CSV_CARDORG
+gerar_cards $CSV_DEPUTADOS $CSV_CARDDEP
 
+echo "Todos os CSV para o jogo foram gerados, agora use o InkscapeGenerator para gerar os cartões."
