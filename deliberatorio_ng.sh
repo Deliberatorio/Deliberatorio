@@ -27,15 +27,16 @@
 #   Version NG 0.1 (Versão Nova Geração em Desenvolvimento)
 
 CSV_ORGAOS="$PWD/all-org.csv"
-CSV_CARDORG="$PWD/org.csv"
-TMP_ORGAOS="data/ObterOrgaos.xml"
-
 CSV_PAUTAS="$PWD/prop.csv"
-TMP_PAUTAS=$( mktemp )
-
 CSV_DEPUTADOS="$PWD/all-dep.csv"
 CSV_CARDDEP="$PWD/dep.csv"
+CSV_CARDORG="$PWD/org.csv"
+
+TMP_PAUTAS=$( mktemp )
+
 TMP_DEPUTADOS="data/ObterDeputados.xml"
+TMP_ORGAOS="data/ObterOrgaos.xml"
+
 
 # Barra de Progresso
 COUNT=0
@@ -70,7 +71,9 @@ else
       echo $idOrgao\;$siglaOrgao\;$descricaoOrgao >> $CSV_ORGAOS
 
    done
-      echo "Relação de Orgãos atualizado."
+      echo "
+      Relação de Orgãos atualizado.
+      "
 fi
 
 echo "Atualizar a Pauta da Semana? [S]im ou [N]ão"
@@ -142,6 +145,7 @@ else
       # Capturando detalhe do deputado no orgão
       # URL_DETALHE="http://www.camara.gov.br/SitCamaraWS/Deputados.asmx/ObterDetalhesDeputado?ideCadastro=$ideCadastro&numLegislatura="
       URL_DETALHE="data/$ideCadastro.xml"
+
       siglaDeputado=$(xmlstarlet sel -t -v "//Deputados/Deputado/comissoes/comissao[last()]/siglaComissao" $URL_DETALHE | uniq)
 
       # Gerando CSV dos Deputados
@@ -167,13 +171,18 @@ else
 
    for cardOrgao in $listOrgPauta; do
       grep $cardOrgao $CSV_ORGAOS
-   done > $CSV_CARDORG
+   done | sort | uniq > $CSV_CARDORG
 
    for cardOrgao in $listOrgPauta; do
       grep $cardOrgao $CSV_DEPUTADOS
-   done > $CSV_CARDDEP
+   done | sort | uniq > $CSV_CARDDEP
 
    echo "Nova base de cartões gerado."
 fi
 
-echo "Finalizado. Agora utilize o CSV no InkscapeGenerator para gerar os cartões em PDF."
+echo "
+Finalizado.
+
+Gerado $(wc -l $CSV_PAUTAS | sed s/prop.csv/Proposições/g) em $(wc -l $CSV_CARDORG | sed s/org.csv/Comissões/g) com $(wc -l $CSV_CARDDEP | sed s/dep.csv/Deputados/g) envolvidos nas discussões.
+
+Agora utilize os arquivos CSV no script do generator.sh para gerar os cartões em PDF." | sed s%$PWD%%g
