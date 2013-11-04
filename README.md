@@ -15,14 +15,14 @@ Entendendo a estrutura dos diretórios e arquivos:
 - ./LICENSE - Licenciamento
 - ./README.md - Este arquivo
 - ./templates/ - Diretório com o template dos cartões
-  - dep.svg - Template do cartão para Deputados
-  - event.svg - Template do cartão para Eventos
-  - org.svg - Template do cartão para Órgãos
-  - prop.svg - Template do cartão para Proposições
+  - cards_padrao/dep.svg - Template do cartão para Deputados no tema Padrão
+  - cards_padrao/event.svg - Template do cartão para Eventos no tema Padrão
+  - cards_padrao/org.svg - Template do cartão para Órgãos no tema Padrão
+  - cards_padrao/prop.svg - Template do cartão para Proposições no tema Padrão
   - fotos/ - Diretório com foto dos Deputados (atualizado via API da Câmara dos Deputados)
   - icones/ - Diretório com icones utilizado nas cartas
   - partidos/ - Diretório com logos dos Partidos Brasileiros
-
+  - cards_???? - Diretório com outra proposta de tema para as cartas
 
 #### Dependências:
 
