@@ -27,6 +27,7 @@ Entendendo a estrutura dos diretórios e arquivos:
 #### Dependências:
 
 - xmlstarlet - conjunto de ferramentas XML de linha de comandos, <http://xmlstar.sourceforge.net/>
+- lynx - navegador web somente em modo texto
 - Inkscape - software para edição vertorial SVG, <http://www.inkscape.org>
 - InkscapeGenerator - extensão para Inkscape gerar mala direta, <http://wiki.colivre.net/Aurium/InkscapeGenerator>
 
@@ -43,6 +44,10 @@ O próximo passo é abrir o Inkscape com a extensão Generator funcionando, segu
 - prop.svg -> prop.csv
 
 O resultado será vários cards em .PDF individuais, você pode usar o "pdfjoin" para juntar todos PDFs em um único arquivo de impressão, dispondo lado-lado, a quantidade X por folha A3 ou A4.
+
+    # Gera arquivo pdf com cada um PDF gerado em uma folha. 
+    # Ao imprimir escolha imprimir 16 ou 9 por folha no seu software de impressão favorito
+    pdjoin ~/DIRETORIO/*.pdf --outfile deliberatorio.pdf
 
 
 #### Sobre os Branchs:
