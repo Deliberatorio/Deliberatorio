@@ -1968,18 +1968,18 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.36619826"
-     inkscape:cx="-318.98019"
+     inkscape:zoom="0.51788255"
+     inkscape:cx="749.69064"
      inkscape:cy="552.97511"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1366"
-     inkscape:window-height="681"
-     inkscape:window-x="0"
-     inkscape:window-y="28"
+     inkscape:window-width="1024"
+     inkscape:window-height="715"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:snap-global="false">
     <sodipodi:guide
@@ -2020,7 +2020,7 @@
        y="562.36218" />
     <g
        id="g6874-8"
-       transform="matrix(4.8167563,0,0,4.8167563,138.83732,515.89332)"
+       transform="matrix(4.8167563,0,0,4.8167563,138.83732,541.89332)"
        style="fill:#000000">
       <g
          id="Captions-7"
@@ -2247,5 +2247,52 @@
            y="0"
            x="0" /></flowRegion><flowPara
          id="flowPara3103-5"
-         style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:129.99999523%;writing-mode:lr-tb;text-anchor:start;fill:#000000;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'">%VAR_5%</flowPara></flowRoot>  </g>
+         style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:129.99999523%;writing-mode:lr-tb;text-anchor:start;fill:#000000;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'">%VAR_5%</flowPara></flowRoot>    <rect
+       style="opacity:0.70007228;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:17.20000076;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3490"
+       width="194.54663"
+       height="73.262024"
+       x="478.68216"
+       y="563.55591"
+       ry="0" />
+    <g
+       id="g4267"
+       transform="translate(-8,6)">
+      <g
+         transform="matrix(0.836788,0,0,0.836788,503.33618,558.02715)"
+         id="g7586">
+        <path
+           style="fill:#010101"
+           inkscape:connector-curvature="0"
+           d="m 96.505,74.579 h -3.603 v -4.744 h -50.04 v 4.744 h -3.596 c -1.92,0 -3.478,1.954 -3.478,4.343 -0.02,2.422 1.558,4.352 3.478,4.34 h 57.238 c 1.927,0.03 3.518,-1.918 3.495,-4.325 0.002,-2.404 -1.568,-4.358 -3.494,-4.358 z"
+           id="path7572" />
+        <path
+           style="fill:#010101"
+           inkscape:connector-curvature="0"
+           d="m 58.534,58.041 c 1.708,1.707 4.163,1.966 5.539,0.599 L 81.502,41.17 c 1.386,-1.354 1.111,-3.84 -0.592,-5.533 -1.7,-1.695 -4.192,-1.975 -5.539,-0.6 L 57.918,52.516 c -1.368,1.361 -1.087,3.838 0.616,5.525 z"
+           id="path7574" />
+        <path
+           style="fill:#010101"
+           inkscape:connector-curvature="0"
+           d="m 24.363,23.88 c 1.708,1.715 4.18,1.966 5.533,0.591 L 47.341,7.006 C 48.711,5.647 48.451,3.156 46.748,1.467 45.049,-0.223 42.557,-0.5 41.209,0.882 L 23.758,18.345 c -1.362,1.377 -1.09,3.839 0.605,5.535 z"
+           id="path7576" />
+        <path
+           style="fill:#010101"
+           inkscape:connector-curvature="0"
+           d="M 49.831,9.492 32.229,27.125 40.301,35.176 1.248,74.219 C 0.478,75.017 0,76.096 0,77.291 c 0,0.541 0.11,1.054 0.287,1.533 0.45,1.216 1.407,2.173 2.623,2.62 0.478,0.174 0.99,0.285 1.529,0.285 1.146,0 2.183,-0.448 2.971,-1.162 l 39.092,-39.176 0.055,0.014 8.729,8.764 L 72.866,32.538 49.831,9.492 z"
+           id="path7578" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:39.59500885px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:129.99999523%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans Bold"
+         x="606.75635"
+         y="607.98175"
+         id="text4763"
+         sodipodi:linespacing="130%"><tspan
+           sodipodi:role="line"
+           id="tspan4765"
+           x="606.75635"
+           y="607.98175">=10</tspan></text>
+    </g>
+  </g>
 </svg>
