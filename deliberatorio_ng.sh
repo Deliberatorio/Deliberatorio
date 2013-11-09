@@ -151,7 +151,7 @@ else
       # Gerando CSV dos Deputados
       echo $ideCadastro\;$nomeParlamentar\;$partidoDeputado\;$ufDeputado\;$siglaDeputado\;$urlFoto\;$sexoDep >> $CSV_DEPUTADOS
 
-   done #ideCadastro
+   done
 
    echo "
 
@@ -171,13 +171,17 @@ else
 
    for cardOrgao in $listOrgPauta; do
       grep $cardOrgao $CSV_ORGAOS
-   done | sort | uniq > $CSV_CARDORG
+   done | sort | uniq > $TMP_PAUTAS
+   grep -v Especial $TMP_PAUTAS > $CSV_CARDORG
 
-   for cardOrgao in $listOrgPauta; do
-      grep $cardOrgao $CSV_DEPUTADOS
-   done | sort | uniq > $CSV_CARDDEP
+   # Filtra lista de deputados em orgãos na pauta
+   listOrgDep=`cat $CSV_CARDORG | cut -d";" -f 2| sort | uniq`
 
-   echo "Nova base de cartões gerado."
+   for cardOrgao in $listOrgDep; do
+      grep $cardOrgao $CSV_DEPUTADOS | head -4
+   done  | sort | uniq > $CSV_CARDDEP
+
+   echo "Nova base de cartões gerada."
 fi
 
 echo "
