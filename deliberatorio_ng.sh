@@ -88,7 +88,7 @@ else
    Obtendo Pauta da Semana:"
    for idOrgao in `cat $CSV_ORGAOS | cut -d";" -f1`; do
    # OBTER PAUTAS
-   URL_PAUTAS="http://www.camara.gov.br/SitCamaraWS/Orgaos.asmx/ObterPauta?IDOrgao=$idOrgao&datIni=$(date +%d\/%m\/%Y)&datFim=$(date +%d\/%m\/%Y -d "+10 days")"
+   URL_PAUTAS="http://www.camara.gov.br/SitCamaraWS/Orgaos.asmx/ObterPauta?IDOrgao=$idOrgao&datIni=$(date +%d\/%m\/%Y)&datFim=$(date +%d\/%m\/%Y -d "+6 days")"
    wget $URL_PAUTAS -O $TMP_PAUTAS 2> /dev/null
    let COUNT++
    siglaOrgao=$(grep $idOrgao $CSV_ORGAOS | cut -d";" -f2)
@@ -102,10 +102,10 @@ else
       ementaPauta=$(xmlstarlet sel -t -v "//pauta/reuniao/proposicoes/proposicao[$PautaCOUNT]/ementa" $TMP_PAUTAS)
       pontoPauta=$(echo $idPauta | rev | cut -c -2 | rev)
       nomePauta=$(echo $idPauta | sed s/"\/"/":"/g)
-      echo $pontoPauta\;$(echo $idPauta | sed s/_/\ /g)\;$siglaOrgao\;$ementaPauta\;$nomePauta \
+      echo $pontoPauta\;$(echo $idPauta | sed s/_/\ /g)\;$(echo $siglaOrgao | head -1 | cut -d" " -f1)\;$ementaPauta\;$nomePauta \
       | grep -E 'PL_|PEC_' \
-      | grep -vE '(Altera|nova redação|revoga|Acrescenta|REQ_)'
-   done | head -5 >> $CSV_PAUTAS
+      | grep -vE '(Altera|§|nova redação|revoga|Acrescenta|REQ_)'
+   done | head -3 >> $CSV_PAUTAS
    done #idOrgao
    echo "
 
