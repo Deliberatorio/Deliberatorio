@@ -2090,8 +2090,8 @@
          x="-1131.4286"
          y="266.64789" /></text>
     <image
-       sodipodi:absref="/home/valessio/Desenvolvimento/deliberatorio/templates/./fotos/%VAR_6%"
-       xlink:href="./fotos/%VAR_6%"
+       sodipodi:absref="../fotos/%VAR_6%"
+       xlink:href="../fotos/%VAR_6%"
        y="162.26164"
        x="88.571426"
        id="image6695"
@@ -2136,8 +2136,8 @@
            y="207.87466"
            style="font-size:58.02212524px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:center;text-decoration:none;line-height:100%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:middle;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Trebuchet MS;-inkscape-font-specification:Trebuchet MS" /></flowRegion><flowPara
          id="flowPara3471">%VAR_5%</flowPara></flowRoot>    <image
-       sodipodi:absref="/home/valessio/Desenvolvimento/deliberatorio/templates/./partidos/%VAR_3%.jpg"
-       xlink:href="./partidos/%VAR_3%.jpg"
+       sodipodi:absref="../partidos/%VAR_3%.jpg"
+       xlink:href="../partidos/%VAR_3%.jpg"
        width="104.8102"
        height="104.8102"
        id="image3473"
@@ -2145,8 +2145,8 @@
        y="385.29599"
        clip-path="none" />
     <image
-       sodipodi:absref="./icones/%VAR_7%.svg"
-       xlink:href="./icones/%VAR_7%.svg"
+       sodipodi:absref="../icones/%VAR_7%.svg"
+       xlink:href="../icones/%VAR_7%.svg"
        clip-path="none"
        y="529.14478"
        x="191.35277"
