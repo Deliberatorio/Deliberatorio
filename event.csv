@@ -1,25 +1,25 @@
-Coligação,Dados Abertos,Conquista 2 deputados do jogador alvo para a sua mesa
-Coligação,Transparência Total,Conquista 01 Comissão do jogador alvo para a sua mesa
-Coligação,Eficiência Legislativa,Aprova automaticamente uma Proposição
-Coligação,Hackers na Camara,Conquista 01 deputado do jogador alvo para a sua mesa
-Coligação,Compartillhar é Legal,Troque um deputado qualquer seu por um deputado qualquer do jogador alvo
-Manifestação Popular,Abaixo Assinado,Reduz 01 ponto da proposição em jogo
-Manifestação Popular,DDOS,Cartas de Mídia não podem ser baixadas até a próxima proposição
-Manifestação Popular,Greve,Pula 02 turnos do jogador alvo
-Manifestação Popular,Passeata,Nenhum deputado entra em jogo no próximo turno de cada jogador e reduz 02 pontos da proposição
-Mí­dia,Anúncio na TV,Um anuncio conseguiu apoio da população. Reduza 1 ponto da proposição
-Mí­dia,Imprensa Marrom,Uma notícia criticou o projeto. Acrescente 1 ponto à proposição
-Mí­dia,Informe Publicitário,Um informe conquistou apoiadores.  Reduza 2 pontos da proposição
-Mí­dia,Reportagem Investigativa,Uma reportagem revelou falhas na Proposição. Acrescente 2 pontos à proposição
-Pizza,Brócolis com Quatro Queijos,"Ninguém baixa deputados na mesa no seu próximo turno, inclusive o quem baixar esta pizza"
-Pizza,Calabresa,A proposição atual é automaticamente reprovada. Nenhum jogador recebe os pontos.
-Pizza,Muçarela,Pula o turno do jogador alvo
-Pizza,Pepperoni,O jogador alvo fica proibido de jogar Comissões por 2 de seus turnos
-Pizza,Quatro Queijos,Cancela uma ação de Coligação. Pode ser baixada no turno de outro jogador.
-Reunião Extraordinária,Reunião de segunda à noite,Recupera uma carta de Comissão já usada para sua mão
-Reunião Extraordinária,Reunião de sexta à noite,Recupera duas cartas de Deputado já usadas para sua mão
-Reunião Extraordinária,Reunião de sábado,Recupera uma carta de Mídia para sua mão
-Reunião Extraordinária,Reunião de domingo,Recupera uma carta de Pizza para a sua mão
-Reunião Extraordinária,Reunião de madrugada,Recupera uma carta de Coligação para a sua mão
-Reunião Solene,Aniversário da Constituição,Recupera 10 cartas de deputados para o baralho de ações. Embaralhe as cartas após o resgate.
-Reunião Solene,Homenagem Especial,Recupera 02 cartas de pizza para o baralho de ações
+Coligação;Dados Abertos;Conquista 2 deputados do jogador alvo para a sua mesa
+Coligação;Transparência Total;Conquista 01 Comissão do jogador alvo para a sua mesa
+Coligação;Eficiência Legislativa;Aprova automaticamente uma Proposição
+Coligação;Hackers na Camara;Conquista 01 deputado do jogador alvo para a sua mesa
+Coligação;Compartillhar é Legal;Troque um deputado qualquer seu por um deputado qualquer do jogador alvo
+Manifestação Popular;Abaixo Assinado;Reduz 01 ponto da proposição em jogo
+Manifestação Popular;DDOS;Cartas de Mídia não podem ser baixadas até a próxima proposição
+Manifestação Popular;Greve;Pula 02 turnos do jogador alvo
+Manifestação Popular;Passeata;Nenhum deputado entra em jogo no próximo turno de cada jogador e reduz 02 pontos da proposição
+Mídia;Anúncio na TV;Um anuncio conseguiu apoio da população. Reduza 1 ponto da proposição
+Mídia;Imprensa Marrom;Uma notícia criticou o projeto. Acrescente 1 ponto à proposição
+Mídia;Informe Publicitário;Um informe conquistou apoiadores.  Reduza 2 pontos da proposição
+Mídia;Reportagem Investigativa;Uma reportagem revelou falhas na Proposição. Acrescente 2 pontos à proposição
+Pizza;Brócolis com Queijo;Ninguém baixa deputados na mesa no seu próximo turno, inclusive o quem baixar esta pizza
+Pizza;Calabresa;A proposição atual é automaticamente reprovada. Nenhum jogador recebe os pontos.
+Pizza;Muçarela;Pula o turno do jogador alvo
+Pizza;Pepperoni;O jogador alvo fica proibido de jogar Comissões por 2 de seus turnos
+Pizza;Quatro Queijos;Cancela uma ação de Coligação. Pode ser baixada no turno de outro jogador.
+Reunião Extraordinária;Reunião de segunda à noite;Recupera uma carta de Comissão já usada para sua mão
+Reunião Extraordinária;Reunião de sexta à noite;Recupera duas cartas de Deputado já usadas para sua mão
+Reunião Extraordinária;Reunião de sábado;Recupera uma carta de Mídia para sua mão
+Reunião Extraordinária;Reunião de domingo;Recupera uma carta de Pizza para a sua mão
+Reunião Extraordinária;Reunião de madrugada;Recupera uma carta de Coligação para a sua mão
+Reunião Solene;Aniversário da Constituição;Recupera 10 cartas de deputados para o baralho de ações. Embaralhe as cartas após o resgate.
+Reunião Solene;Homenagem Especial;Recupera 02 cartas de pizza para o baralho de ações
