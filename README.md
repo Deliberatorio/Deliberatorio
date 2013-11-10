@@ -22,7 +22,6 @@ Entendendo a estrutura dos diretórios e arquivos:
   - fotos/ - Diretório com foto dos Deputados (atualizado via API da Câmara dos Deputados)
   - icones/ - Diretório com icones utilizado nas cartas
   - partidos/ - Diretório com logos dos Partidos Brasileiros
-  - cards_???? - Diretório com outra proposta de tema para as cartas
 
 #### Dependências:
 
@@ -32,20 +31,16 @@ Entendendo a estrutura dos diretórios e arquivos:
 
 #### Como instalar/gerar os cartões?
 
-Ao instalar as dependêncais necessárias, rode o script "deliberatorio.sh" para gerar um CSV das atividades atuais que estão pautada para esta próxima semana na Câmara dos Deputados.
+Após instalar as dependêncais necessárias, rode o script "deliberatorio.sh".
 
-O próximo passo é abrir o Inkscape com a extensão Generator funcionando, seguir a documentação para apontar os arquivos .csv gerados aos respectivos templates .svg,  ambos tem o mesmo nome, são eles:
+Aguarde a execução do script e pronto. O tempo de execução pode variar dependendo da sua velocidade de conexão à internet, pois são obtidos sempre os dados mais recentes da Câmara dos Deputados.
 
-- dep.svg -> dep.csv
-- event.svg -> event.csv
-- org.svg -> org.csv
-- prop.svg -> prop.csv
+Em seguida você irá encontrar no diretório raiz dois arquivos PDF para imprimir o jogo indicando o tamanho das cartas e a data em que foi gerado:
 
-O resultado será vários cards em .PDF individuais, você pode usar o "pdfjoin" para juntar todos PDFs em um único arquivo de impressão, dispondo lado-lado, a quantidade X por folha A3 ou A4.
+    Deliberatorio_16xA4_DATA.pdf
+    Deliberatorio_9XA4_DATA.pdf
 
-    # Gera arquivo pdf com cada um PDF gerado em uma folha. 
-    # Ao imprimir escolha imprimir 16 ou 9 por folha no seu software de impressão favorito
-    pdjoin ~/DIRETORIO/*.pdf --outfile deliberatorio.pdf
+Corte as cartas, leia as instruções e bom jogo!
 
 
 #### Sobre os Branchs:
