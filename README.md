@@ -14,7 +14,6 @@ Entendendo a estrutura dos diretórios e arquivos:
 - ./event.csv - Base das cartas especiais dos eventos;
 - ./LICENSE - Licenciamento
 - ./README.md - Este arquivo
-- ./GeneratorInkscape - extensão do Inkscape para gerar o PDF das cartas
 - ./templates/ - Diretório com o template dos cartões
   - cards_padrao/dep.svg - Template do cartão para Deputados no tema Padrão
   - cards_padrao/event.svg - Template do cartão para Eventos no tema Padrão
@@ -28,10 +27,7 @@ Entendendo a estrutura dos diretórios e arquivos:
 #### Dependências:
 
 - xmlstarlet - conjunto de ferramentas XML de linha de comandos, <http://xmlstar.sourceforge.net/>
-- lynx - navegador web somente em modo texto
 - Inkscape - software para edição vertorial SVG, <http://www.inkscape.org>
-- InkscapeGenerator - extensão para Inkscape gerar mala direta, incluída neste repositório <https://github.com/sbvirtual/Deliberatorio/tree/master/GeneratorInkscape>
-
 
 #### Como instalar/gerar os cartões?
 
@@ -54,7 +50,6 @@ O resultado será vários cards em .PDF individuais, você pode usar o "pdfjoin"
 #### Sobre os Branchs:
 
 - master - Versão Estável do Script para gerar o baralho;
-- exemplo-dados - Dados de exemplo;
 - scripts-web - Versão em desenvolvimento da aplicação Web;
 
 ---
