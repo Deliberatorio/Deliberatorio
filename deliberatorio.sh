@@ -124,7 +124,7 @@ else
       echo $pontoPauta\;$(echo $idPauta | sed s/_/\ /g)\;$(echo $siglaOrgao | head -1 | cut -d" " -f1)\;$ementaPauta\;$nomePauta \
       | grep -E 'PL_|PEC_' \
       | grep -vE '(Altera|§|nova redação|revoga|Acrescenta|REQ_)'
-   done | head -3 >> $CSV_PAUTAS
+   done | sort -R | head -3 >> $CSV_PAUTAS
    done #idOrgao
    echo "
 
@@ -201,7 +201,7 @@ else
    listOrgDep=`cat $CSV_CARDORG | cut -d";" -f 2| sort | uniq`
 
    for cardOrgao in $listOrgDep; do
-      grep $cardOrgao $CSV_DEPUTADOS | head -4
+      grep $cardOrgao $CSV_DEPUTADOS | sort -R | head -4
    done  | sort | uniq > $CSV_CARDDEP
 
    echo "Nova base de cartões gerada."
