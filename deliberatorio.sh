@@ -26,17 +26,37 @@
 
 #   Version NG 0.1 (Versão Nova Geração em Desenvolvimento)
 
+
+# Arquivos CSV gerados
 CSV_ORGAOS="$PWD/all-org.csv"
 CSV_PAUTAS="$PWD/prop.csv"
 CSV_DEPUTADOS="$PWD/all-dep.csv"
 CSV_CARDDEP="$PWD/dep.csv"
 CSV_CARDORG="$PWD/org.csv"
 
+# Fontes dos WebService
+URL_ORGAOS="http://www.camara.gov.br/SitCamaraWS/Orgaos.asmx/ObterOrgaos"
+URL_DEPUTADOS="http://www.camara.gov.br/SitCamaraWS/Deputados.asmx/ObterDeputados"
+URL_DETALHE="http://www.camara.gov.br/SitCamaraWS/Deputados.asmx/ObterDetalhesDeputado?ideCadastro=$ideCadastro&numLegislatura="
+
+# Arquivos TMPs ou Cache
 TMP_PAUTAS=$( mktemp )
+TMP_DEPUTADOS="$PWD/data/ObterDeputados.xml"
+TMP_ORGAOS="$PWD/data/ObterOrgaos.xml"
 
-TMP_DEPUTADOS="data/ObterDeputados.xml"
-TMP_ORGAOS="data/ObterOrgaos.xml"
+# Cria diretório do cache "data"
+mkdir -p $PWD/data
 
+# Verifica se existe o arquivo na cache
+if [ ! -f $TMP_ORGAOS ]
+then
+    wget $URL_ORGAOS -O $TMP_ORGAOS 2> /dev/null
+fi
+
+if [ ! -f $TMP_DEPUTADOS ]
+then
+    wget $URL_DEPUTADOS -O $TMP_DEPUTADOS 2> /dev/null
+fi
 
 # Barra de Progresso
 COUNT=0
@@ -143,10 +163,13 @@ else
       sexoDep=$(xmlstarlet sel -t -v "/deputados/deputado[$COUNT]/sexo" $TMP_DEPUTADOS)
 
       # Capturando detalhe do deputado no orgão
-      # URL_DETALHE="http://www.camara.gov.br/SitCamaraWS/Deputados.asmx/ObterDetalhesDeputado?ideCadastro=$ideCadastro&numLegislatura="
-      URL_DETALHE="data/$ideCadastro.xml"
+      TMP_DETALHE="$PWD/data/$ideCadastro.xml"
+      if [ ! -f $TMP_DETALHE ]
+      then
+        wget $URL_DETALHE -o $TMP_DETALHE 2> /dev/null
+      fi
 
-      siglaDeputado=$(xmlstarlet sel -t -v "//Deputados/Deputado/comissoes/comissao[last()]/siglaComissao" $URL_DETALHE | uniq)
+      siglaDeputado=$(xmlstarlet sel -t -v "//Deputados/Deputado/comissoes/comissao[last()]/siglaComissao" $TMP_DETALHE | uniq)
 
       # Gerando CSV dos Deputados
       echo $ideCadastro\;$nomeParlamentar\;$partidoDeputado\;$ufDeputado\;$siglaDeputado\;$urlFoto\;$sexoDep >> $CSV_DEPUTADOS
