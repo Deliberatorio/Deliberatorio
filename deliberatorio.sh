@@ -50,9 +50,8 @@ TMP_PAUTAS=$( mktemp )
 TMP_DEPUTADOS="$PWD/data/ObterDeputados.xml"
 TMP_ORGAOS="$PWD/data/ObterOrgaos.xml"
 
-# Criando diretórios do cache "data" e "gerado"
+# Criando diretórios do cache "data"
 mkdir -p $PWD/data
-mkdir -p $PWD/gerado
 
 # Verifica se existe o arquivo na cache
 if [ ! -f $TMP_ORGAOS ]
@@ -160,7 +159,7 @@ else
       let COUNT++
 
       # Progresso dos Deputados
-      progresso $(echo $idDeputados | wc -l)
+      progresso 513
 
       # Parser XML dos detalhes do Deputado
       nomeParlamentar=$(xmlstarlet sel -t -v "//deputados/deputado[$COUNT]/nomeParlamentar" $TMP_DEPUTADOS)
@@ -215,7 +214,15 @@ else
    echo "Nova base de cartões gerada."
 fi
 
-# Gerandos os SVGs
+echo "Gerar cartões em PDF? [S]im ou [N]ão"
+rm -ir $PWD/gerado 2> /dev/null
+if [ -d gerado ]
+then
+   echo "Cartões em PDF anteriores mantido."
+else
+
+mkdir -p $PWD/gerado
+
 CARDS="EVENTS PAUTAS CARDDEP CARDORG"
 
 for cardItem in $CARDS; do
@@ -239,10 +246,26 @@ Gerando cards $cardItem em PDF
     done
 done
 
+fi
+
 echo "
+
+Compilando as cartas para impressão em modo 9xA4 e 16xA4
+"
+inkscape -z $PWD/instrucoes.svg -A $PWD/instrucoes.pdf 2> /dev/null > /dev/null
+
+DESC=$(echo "Gerado $(wc -l $CSV_PAUTAS | sed s/prop.csv/Proposições/g) em $(wc -l $CSV_CARDORG | sed s/org.csv/Comissões/g) com $(wc -l $CSV_CARDDEP | sed s/dep.csv/Deputados/g) envolvidos nas discussões.
+" | sed s%$PWD%%g)
+AUTORES="BRÍGIDA, Luciano S. BRITO, Valessio S."
+TERMOS="jogo, cartas, politica, câmara deputados"
+
+pdfjoin --paper a4paper --frame true --pdftitle "Deliberatório - $(date +%d/%m/%Y)" --pdfauthor "$AUTORES" --pdfsubject "$(echo $DESC)" --pdfkeywords "$TERMOS" --nup 3x3 $PWD/gerado/*.pdf -o $PWD/cards_9xA4.pdf 2> /dev/null
+pdfjoin $PWD/instrucoes.pdf $PWD/cards_9xA4.pdf -o Deliberatorio_9xA4_$(date +%d%m%Y).pdf 2> /dev/null > /dev/null
+pdfjoin --paper a4paper --frame true --pdftitle "Deliberatório - $(date +%d/%m/%Y)" --pdfauthor "$AUTORES" --pdfsubject "$(echo $DESC)" --pdfkeywords "$TERMOS" --nup 4x4 $PWD/gerado/*.pdf -o $PWD/cards_16xA4.pdf 2> /dev/null
+pdfjoin $PWD/instrucoes.pdf $PWD/cards_9xA4.pdf -o Deliberatorio_16xA4_$(date +%d%m%Y).pdf 2> /dev/null > /dev/null
+rm instrucoes.pdf cards_9xA4.pdf cards_16xA4.pdf 2> /dev/null > /dev/null
+
+echo "$DESC
+
 Finalizado.
-
-Gerado $(wc -l $CSV_PAUTAS | sed s/prop.csv/Proposições/g) em $(wc -l $CSV_CARDORG | sed s/org.csv/Comissões/g) com $(wc -l $CSV_CARDDEP | sed s/dep.csv/Deputados/g) envolvidos nas discussões.
-" | sed s%$PWD%%g
-
-
+"
