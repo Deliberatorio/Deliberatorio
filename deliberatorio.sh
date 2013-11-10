@@ -26,11 +26,18 @@
 
 #   Version NG 0.1 (Versão Nova Geração em Desenvolvimento)
 
+# Definição do template para os cards
+CARD_TEMPLATE="cards_padrao"
+CARD_CARDDEP="$PWD/templates/$CARD_TEMPLATE/dep.svg"
+CARD_EVENTS="$PWD/templates/$CARD_TEMPLATE/event.svg"
+CARD_CARDORG="$PWD/templates/$CARD_TEMPLATE/org.svg"
+CARD_PAUTAS="$PWD/templates/$CARD_TEMPLATE/prop.svg"
 
 # Arquivos CSV gerados
-CSV_ORGAOS="$PWD/all-org.csv"
-CSV_PAUTAS="$PWD/prop.csv"
 CSV_DEPUTADOS="$PWD/all-dep.csv"
+CSV_ORGAOS="$PWD/all-org.csv"
+CSV_EVENTS="$PWD/event.csv"
+CSV_PAUTAS="$PWD/prop.csv"
 CSV_CARDDEP="$PWD/dep.csv"
 CSV_CARDORG="$PWD/org.csv"
 
@@ -43,8 +50,9 @@ TMP_PAUTAS=$( mktemp )
 TMP_DEPUTADOS="$PWD/data/ObterDeputados.xml"
 TMP_ORGAOS="$PWD/data/ObterOrgaos.xml"
 
-# Cria diretório do cache "data"
+# Criando diretórios do cache "data" e "gerado"
 mkdir -p $PWD/data
+mkdir -p $PWD/gerado
 
 # Verifica se existe o arquivo na cache
 if [ ! -f $TMP_ORGAOS ]
@@ -172,7 +180,7 @@ else
       siglaDeputado=$(xmlstarlet sel -t -v "//Deputados/Deputado/comissoes/comissao[last()]/siglaComissao" $TMP_DETALHE | uniq)
 
       # Gerando CSV dos Deputados
-      echo $ideCadastro\;$nomeParlamentar\;$partidoDeputado\;$ufDeputado\;$siglaDeputado\;$urlFoto\;$sexoDep >> $CSV_DEPUTADOS
+      echo $ideCadastro\;$nomeParlamentar\;$partidoDeputado\;$ufDeputado\;$siglaDeputado\;$(echo $urlFoto | cut -d"/" -f7)\;$sexoDep >> $CSV_DEPUTADOS
 
    done
 
@@ -207,9 +215,34 @@ else
    echo "Nova base de cartões gerada."
 fi
 
+# Gerandos os SVGs
+CARDS="EVENTS PAUTAS CARDDEP CARDORG"
+
+for cardItem in $CARDS; do
+echo "
+
+Gerando cards $cardItem em PDF
+"
+    eval CARD_FILE=$(echo \$CSV_$cardItem)
+    eval CARD_TEMPLATE=$(echo \$CARD_$cardItem)
+    COUNT=0
+    for lineItem in `seq 1 $(cat $CARD_FILE | wc -l)`; do
+        let COUNT++
+        progresso $(cat $CARD_FILE | wc -l)
+        LINE_ITEM=$(tail -$lineItem $CARD_FILE | head -1)
+        FILE_ITEM="$PWD/gerado/$(echo $cardItem)_$lineItem"
+        cat $CARD_TEMPLATE > $(echo $FILE_ITEM).svg
+        for columItem in `seq 1 $(echo $LINE_ITEM | sed s/";"/"\n"/g | wc -l)` ; do
+            sed -i -e "s#%VAR_$columItem%#$(echo $LINE_ITEM | cut -d';' -f$columItem)#g" $(echo $FILE_ITEM).svg
+        done
+        inkscape -z $(echo $FILE_ITEM).svg -A $(echo $FILE_ITEM).pdf 2> /dev/null > /dev/null
+    done
+done
+
 echo "
 Finalizado.
 
 Gerado $(wc -l $CSV_PAUTAS | sed s/prop.csv/Proposições/g) em $(wc -l $CSV_CARDORG | sed s/org.csv/Comissões/g) com $(wc -l $CSV_CARDDEP | sed s/dep.csv/Deputados/g) envolvidos nas discussões.
+" | sed s%$PWD%%g
 
-Agora utilize os arquivos CSV no script do generator.sh para gerar os cartões em PDF." | sed s%$PWD%%g
+
