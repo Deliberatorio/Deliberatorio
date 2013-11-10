@@ -37,7 +37,6 @@ CSV_CARDORG="$PWD/org.csv"
 # Fontes dos WebService
 URL_ORGAOS="http://www.camara.gov.br/SitCamaraWS/Orgaos.asmx/ObterOrgaos"
 URL_DEPUTADOS="http://www.camara.gov.br/SitCamaraWS/Deputados.asmx/ObterDeputados"
-URL_DETALHE="http://www.camara.gov.br/SitCamaraWS/Deputados.asmx/ObterDetalhesDeputado?ideCadastro=$ideCadastro&numLegislatura="
 
 # Arquivos TMPs ou Cache
 TMP_PAUTAS=$( mktemp )
@@ -163,6 +162,7 @@ else
       sexoDep=$(xmlstarlet sel -t -v "/deputados/deputado[$COUNT]/sexo" $TMP_DEPUTADOS)
 
       # Capturando detalhe do deputado no orgão
+      URL_DETALHE="http://www.camara.gov.br/SitCamaraWS/Deputados.asmx/ObterDetalhesDeputado?ideCadastro=$ideCadastro&numLegislatura="
       TMP_DETALHE="$PWD/data/$ideCadastro.xml"
       if [ ! -f $TMP_DETALHE ]
       then
