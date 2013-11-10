@@ -24,7 +24,7 @@
 #   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #   GNU General Public License for more details.
 
-#   Version NG 0.1 (Versão Nova Geração em Desenvolvimento)
+#   Version 0.3 
 
 # Definição do template para os cards
 CARD_TEMPLATE="cards_padrao"
