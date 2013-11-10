@@ -28,6 +28,7 @@ Entendendo a estrutura dos diretórios e arquivos:
 
 - xmlstarlet - conjunto de ferramentas XML de linha de comandos, <http://xmlstar.sourceforge.net/>
 - Inkscape - software para edição vertorial SVG, <http://www.inkscape.org>
+- PDFJam - scripts para tratamento de PDF <http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic-research/firth/software/pdfjam>
 
 #### Como instalar/gerar os cartões?
 
