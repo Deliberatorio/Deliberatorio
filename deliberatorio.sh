@@ -109,12 +109,24 @@ then
    echo "Mantido a versão atual da Pauta."
 else
    COUNT=0
+   echo "Enter para continuar com a data atual, ou digite C e enter para customizar a data."
+   read inputDate
+    if [ $inputDate = "C" ]; then
+        echo "Digite a data inicial (dd/mm/yyyy): "
+        read datIni
+        echo "Digite o intervalo da data final (dd/mm/yyy): "
+        read datFim
+    else
+        datIni=$(date +%d\/%m\/%Y)
+        datFim=$(date +%d\/%m\/%Y -d "+6 days")
+   fi
+
    echo "
 
    Obtendo Pauta da Semana:"
    for idOrgao in `cat $CSV_ORGAOS | cut -d";" -f1`; do
    # OBTER PAUTAS
-   URL_PAUTAS="http://www.camara.gov.br/SitCamaraWS/Orgaos.asmx/ObterPauta?IDOrgao=$idOrgao&datIni=$(date +%d\/%m\/%Y)&datFim=$(date +%d\/%m\/%Y -d "+6 days")"
+   URL_PAUTAS="http://www.camara.gov.br/SitCamaraWS/Orgaos.asmx/ObterPauta?IDOrgao=$idOrgao&datIni=$datIni&datFim=$datFim"
    wget $URL_PAUTAS -O $TMP_PAUTAS 2> /dev/null
    let COUNT++
    siglaOrgao=$(grep $idOrgao $CSV_ORGAOS | cut -d";" -f2)
