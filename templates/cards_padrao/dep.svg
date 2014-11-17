@@ -2076,13 +2076,13 @@
     <image
        sodipodi:absref="C:\Users\ctis ctis\Documents\GitHub\Deliberatorio\templates\cards_padrao\../templates/fotos/%VAR_6%"
        xlink:href="../templates/fotos/%VAR_6%"
-       transform="translate(0,20)"
-       height="321.03214"
-       width="240.77412"
-       clip-path="url(#clipPath7966)"
-       id="image6695"
+       y="162.26164"
        x="88.571426"
-       y="162.26164" />
+       id="image6695"
+       clip-path="url(#clipPath7966)"
+       width="240.77412"
+       height="321.03214"
+       transform="translate(0,20)" />
     <text
        xml:space="preserve"
        style="font-size:144px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:FontAwesome;-inkscape-font-specification:FontAwesome"
@@ -2107,24 +2107,24 @@
            y="-76.209244"
            style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'" /></flowRegion><flowPara
          id="flowPara4008"
-         style="font-size:68px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;font-family:Droid Sans;-inkscape-font-specification:Droid Sans Bold">Dep. %VAR_2%</flowPara></flowRoot>    <image
+         style="font-size:55px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;font-family:Droid Sans;-inkscape-font-specification:Droid Sans Bold">Dep. %VAR_2%</flowPara></flowRoot>    <image
        sodipodi:absref="C:\Users\ctis ctis\Documents\GitHub\Deliberatorio\templates\cards_padrao\../templates/partidos/%VAR_3%.jpg"
        xlink:href="../templates/partidos/%VAR_3%.jpg"
-       clip-path="none"
-       y="385.29599"
-       x="254.23642"
-       id="image3473"
+       width="104.8102"
        height="104.8102"
-       width="104.8102" />
+       id="image3473"
+       x="254.23642"
+       y="385.29599"
+       clip-path="none" />
     <image
        sodipodi:absref="C:\Users\ctis ctis\Documents\GitHub\Deliberatorio\templates\cards_padrao\../templates/icones/%VAR_7%.svg"
        xlink:href="../templates/icones/%VAR_7%.svg"
-       width="361.38895"
-       height="361.38895"
-       id="image3473-3"
-       x="191.35277"
+       clip-path="none"
        y="529.14478"
-       clip-path="none" />
+       x="191.35277"
+       id="image3473-3"
+       height="361.38895"
+       width="361.38895" />
     <g
        id="g7586"
        transform="matrix(0.836788,0,0,0.836788,478.16092,210.27159)">
