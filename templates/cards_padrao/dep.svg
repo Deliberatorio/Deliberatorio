@@ -1990,8 +1990,8 @@
      inkscape:guide-bbox="true"
      inkscape:window-width="1366"
      inkscape:window-height="715"
-     inkscape:window-x="0"
-     inkscape:window-y="27"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:snap-global="false">
     <sodipodi:guide
@@ -2019,22 +2019,6 @@
      inkscape:label="Camada 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <rect
-       style="color:#000000;fill:url(#linearGradient7253);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       id="rect7237"
-       width="248.57143"
-       height="162.85713"
-       x="428.57144"
-       y="291.21933"
-       ry="18.436657" />
-    <rect
-       ry="17.460205"
-       y="295.74762"
-       x="434.8248"
-       height="154.2318"
-       width="236.06468"
-       id="rect7255"
-       style="color:#000000;fill:url(#linearGradient7257);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
     <text
        xml:space="preserve"
        style="font-size:144px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:FontAwesome;-inkscape-font-specification:FontAwesome"
@@ -2058,7 +2042,7 @@
          id="tspan4051"
          x="390.10699"
          y="982.9267"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Trebuchet MS;-inkscape-font-specification:Trebuchet MS">%VAR_3% - %VAR_4%</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Droid Sans;-inkscape-font-specification:Droid Sans">%VAR_3% - %VAR_4%</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:80px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:center;text-decoration:none;line-height:129.99999523%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:middle;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
@@ -2090,7 +2074,7 @@
          x="-1131.4286"
          y="266.64789" /></text>
     <image
-       sodipodi:absref="../templates/fotos/%VAR_6%"
+       sodipodi:absref="C:\Users\ctis ctis\Documents\GitHub\Deliberatorio\templates\cards_padrao\../templates/fotos/%VAR_6%"
        xlink:href="../templates/fotos/%VAR_6%"
        transform="translate(0,20)"
        height="321.03214"
@@ -2123,20 +2107,8 @@
            y="-76.209244"
            style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'" /></flowRegion><flowPara
          id="flowPara4008"
-         style="font-size:68px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;font-family:Droid Sans;-inkscape-font-specification:Droid Sans Bold">Dep. %VAR_2%</flowPara></flowRoot>    <flowRoot
-       xml:space="preserve"
-       id="flowRoot3423"
-       style="font-size:58.02212524px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:center;text-decoration:none;line-height:100%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:middle;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Trebuchet MS;-inkscape-font-specification:Trebuchet MS"
-       transform="matrix(0.94220732,0,0,0.94220732,692.86288,178.52626)"><flowRegion
-         id="flowRegion3425"><rect
-           id="rect3427"
-           width="239.88673"
-           height="186.89966"
-           x="-268.70056"
-           y="207.87466"
-           style="font-size:58.02212524px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:center;text-decoration:none;line-height:100%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:middle;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Trebuchet MS;-inkscape-font-specification:Trebuchet MS" /></flowRegion><flowPara
-         id="flowPara3471">%VAR_5%</flowPara></flowRoot>    <image
-       sodipodi:absref="../templates/partidos/%VAR_3%.jpg"
+         style="font-size:68px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;font-family:Droid Sans;-inkscape-font-specification:Droid Sans Bold">Dep. %VAR_2%</flowPara></flowRoot>    <image
+       sodipodi:absref="C:\Users\ctis ctis\Documents\GitHub\Deliberatorio\templates\cards_padrao\../templates/partidos/%VAR_3%.jpg"
        xlink:href="../templates/partidos/%VAR_3%.jpg"
        clip-path="none"
        y="385.29599"
@@ -2145,7 +2117,7 @@
        height="104.8102"
        width="104.8102" />
     <image
-       sodipodi:absref="../templates/icones/%VAR_7%.svg"
+       sodipodi:absref="C:\Users\ctis ctis\Documents\GitHub\Deliberatorio\templates\cards_padrao\../templates/icones/%VAR_7%.svg"
        xlink:href="../templates/icones/%VAR_7%.svg"
        width="361.38895"
        height="361.38895"
@@ -2153,35 +2125,6 @@
        x="191.35277"
        y="529.14478"
        clip-path="none" />
-    <g
-       id="g6874"
-       transform="translate(478.75348,282.47599)"
-       style="fill:#000000">
-      <g
-         id="Captions"
-         style="fill:#000000" />
-      <g
-         id="Your_Icon"
-         style="fill:#000000">
-        <path
-           id="path6866"
-           d="m 79.185,38.336 c 1.429,-1.658 2.299,-3.811 2.299,-6.166 0,-0.09 -0.018,-0.172 -0.026,-0.26 0.009,-0.088 0.027,-0.176 0.027,-0.268 0,-5.219 -4.245,-9.465 -9.466,-9.465 -0.078,0 -0.152,0.018 -0.23,0.023 -0.077,-0.006 -0.151,-0.023 -0.23,-0.023 -5.219,0 -9.465,4.246 -9.465,9.465 0,0.09 0.02,0.176 0.027,0.262 -0.009,0.09 -0.027,0.174 -0.027,0.266 0,2.516 0.992,4.797 2.597,6.494 -0.652,0.312 -1.279,0.672 -1.881,1.064 -1.537,-5.398 -6.5,-9.365 -12.384,-9.365 -0.107,0 -0.209,0.023 -0.314,0.031 -0.105,-0.008 -0.205,-0.031 -0.312,-0.031 -5.864,0 -10.815,3.941 -12.37,9.311 -0.797,-0.514 -1.634,-0.967 -2.517,-1.338 1.428,-1.658 2.299,-3.811 2.299,-6.166 0,-0.09 -0.019,-0.172 -0.027,-0.26 0.009,-0.088 0.027,-0.176 0.027,-0.268 0,-5.219 -4.246,-9.465 -9.465,-9.465 -0.08,0 -0.153,0.018 -0.231,0.023 -0.077,-0.006 -0.151,-0.023 -0.229,-0.023 -5.219,0 -9.465,4.246 -9.465,9.465 0,0.09 0.02,0.176 0.025,0.262 -0.008,0.09 -0.025,0.174 -0.025,0.266 0,2.516 0.992,4.797 2.596,6.494 C 14.853,41.33 11,47.018 11,53.588 c 0,1.684 1.366,3.049 3.05,3.049 1.684,0 3.049,-1.365 3.049,-3.049 0,-5.758 4.686,-2.443 10.445,-2.443 0.166,0 0.325,-0.021 0.483,-0.049 0.159,0.027 0.34,0.049 0.506,0.049 5.76,0 10.467,-3.315 10.467,2.443 0,0.002 0,0.004 0,0.006 -6,3.891 -11.35,11.186 -11.35,19.529 0,2.293 1.85,4.15 4.141,4.15 2.293,0 4.146,-1.857 4.146,-4.15 0,-7.838 6.376,-2.217 14.217,-2.217 0.226,0 0.441,-0.031 0.657,-0.066 0.217,0.035 0.434,0.066 0.66,0.066 7.84,0 14.219,-5.621 14.219,2.217 0,2.293 1.857,4.15 4.149,4.15 2.293,0 4.15,-1.857 4.15,-4.15 0,-8.848 -5.139,-16.516 -12.584,-20.193 0.343,-5.451 4.876,-1.785 10.413,-1.785 0.165,0 0.325,-0.021 0.483,-0.049 0.159,0.027 0.318,0.049 0.484,0.049 5.76,0 10.445,-3.314 10.445,2.443 0,1.684 1.365,3.049 3.049,3.049 1.684,0 3.049,-1.365 3.049,-3.049 C 89.329,46.736 85.139,40.842 79.185,38.336 z M 31.111,32.17 c 0,1.857 -1.511,3.369 -3.366,3.369 -0.08,0 -0.153,0.018 -0.231,0.021 -0.077,-0.004 -0.151,-0.021 -0.229,-0.021 -1.857,0 -3.367,-1.512 -3.367,-3.369 0,-0.09 -0.02,-0.174 -0.027,-0.262 0.008,-0.088 0.027,-0.174 0.027,-0.266 0,-1.857 1.51,-3.367 3.367,-3.367 0.078,0 0.152,-0.018 0.229,-0.023 0.078,0.006 0.151,0.023 0.231,0.023 1.857,0 3.367,1.51 3.367,3.367 0,0.09 0.02,0.174 0.026,0.26 -0.006,0.09 -0.027,0.176 -0.027,0.268 z m 23.897,11.797 c 0,2.527 -2.056,4.586 -4.583,4.586 -0.107,0 -0.209,0.023 -0.314,0.029 -0.105,-0.006 -0.205,-0.029 -0.314,-0.029 -2.527,0 -4.583,-2.059 -4.583,-4.586 0,-0.121 -0.025,-0.236 -0.036,-0.355 0.011,-0.123 0.037,-0.24 0.037,-0.363 0,-2.527 2.055,-4.584 4.584,-4.584 0.107,0 0.207,-0.023 0.312,-0.031 0.105,0.008 0.207,0.031 0.314,0.031 2.527,0 4.584,2.057 4.584,4.584 0,0.121 0.025,0.234 0.035,0.355 -0.01,0.121 -0.036,0.238 -0.036,0.363 z M 75.386,32.17 c 0,1.857 -1.51,3.369 -3.367,3.369 -0.078,0 -0.152,0.018 -0.23,0.021 -0.077,-0.004 -0.151,-0.021 -0.23,-0.021 -1.856,0 -3.367,-1.512 -3.367,-3.369 0,-0.09 -0.018,-0.174 -0.026,-0.262 0.009,-0.088 0.027,-0.174 0.027,-0.266 0,-1.857 1.51,-3.367 3.366,-3.367 0.079,0 0.153,-0.018 0.23,-0.023 0.078,0.006 0.152,0.023 0.23,0.023 1.857,0 3.367,1.51 3.367,3.367 0,0.09 0.02,0.174 0.027,0.26 -0.008,0.09 -0.027,0.176 -0.027,0.268 z"
-           inkscape:connector-curvature="0"
-           sodipodi:nodetypes="cscsscsscsccscsccscsscsscscsssscsscsssscsssscscsssccsscsscsscsscssscsscsscsscssscsscsscsscs"
-           style="fill:#000000" />
-      </g>
-    </g>
-    <text
-       xml:space="preserve"
-       style="font-size:39.59500885px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:129.99999523%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans Bold"
-       x="581.58112"
-       y="336.22626"
-       id="text7210"
-       sodipodi:linespacing="130%"><tspan
-         sodipodi:role="line"
-         id="tspan7212"
-         x="581.58112"
-         y="336.22626">+2</tspan></text>
     <g
        id="g7586"
        transform="matrix(0.836788,0,0,0.836788,478.16092,210.27159)">
@@ -2216,6 +2159,7 @@
          y="260.22626"
          x="581.58112"
          id="tspan4765"
-         sodipodi:role="line">=3</tspan></text>
+         sodipodi:role="line"
+         style="-inkscape-font-specification:Droid Sans Bold;font-family:Droid Sans;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal">=3</tspan></text>
   </g>
 </svg>

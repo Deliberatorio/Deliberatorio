@@ -1945,9 +1945,9 @@
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:window-width="1366"
-     inkscape:window-height="681"
-     inkscape:window-x="0"
-     inkscape:window-y="28"
+     inkscape:window-height="715"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:snap-global="false">
     <sodipodi:guide
@@ -1994,16 +1994,16 @@
        xml:space="preserve"
        id="flowRoot4000"
        style="font-size:144px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:center;text-decoration:none;line-height:129.99999523%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:middle;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
-       transform="translate(846.74721,138.42309)"><flowRegion
+       transform="matrix(0.5770792,0,0,0.5770792,645.09164,122.11262)"><flowRegion
          id="flowRegion4002"><rect
            id="rect4004"
-           width="645.53851"
-           height="376.92484"
-           x="-797.14288"
-           y="-76.209244"
+           width="1024.1016"
+           height="315.40833"
+           x="-967.49628"
+           y="-95.137398"
            style="font-size:144px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:129.99999523%;writing-mode:lr-tb;text-anchor:middle;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'" /></flowRegion><flowPara
          id="flowPara4008"
-         style="font-size:80px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:110.00000238%;font-family:Droid Sans;-inkscape-font-specification:Droid Sans Bold"> %VAR_2%</flowPara></flowRoot>    <text
+         style="font-size:86.64321986px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:110.00000238000001000%;font-family:Droid Sans;-inkscape-font-specification:Droid Sans Bold"> %VAR_2%</flowPara></flowRoot>    <text
        xml:space="preserve"
        style="font-size:80px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:center;text-decoration:none;line-height:129.99999523%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:middle;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
        x="341.68527"
@@ -2057,7 +2057,7 @@
            y="251.33827"
            style="text-align:center;text-anchor:middle" /></flowRegion><flowPara
          id="flowPara3016"
-         style="font-size:51.16460419px">Evento tipo: %VAR_1%</flowPara></flowRoot>    <text
+         style="font-size:51.16460418999999900px;-inkscape-font-specification:Droid Sans;font-family:Droid Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Estratégia tipo: %VAR_1%</flowPara></flowRoot>    <text
        xml:space="preserve"
        style="font-size:44.49892807px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:end;text-decoration:none;line-height:129.99999523%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:end;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
        x="301.28833"
@@ -2229,7 +2229,7 @@
        xml:space="preserve"
        id="flowRoot3458"
        style="font-size:144px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
-       transform="translate(0,6)"><flowRegion
+       transform="translate(0,12)"><flowRegion
          id="flowRegion3460"><rect
            id="rect3462"
            width="583.1438"
@@ -2237,5 +2237,5 @@
            x="90.754173"
            y="254.88405" /></flowRegion><flowPara
          id="flowPara3464"
-         style="font-size:40px">%VAR_3%</flowPara></flowRoot>  </g>
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Droid Sans;-inkscape-font-specification:Droid Sans">%VAR_3%</flowPara></flowRoot>  </g>
 </svg>
