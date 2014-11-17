@@ -14,7 +14,7 @@
    id="svg3026"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="capa-instrucoes.svg">
+   sodipodi:docname="instrucoes.svg">
   <defs
      id="defs3028">
     <filter
@@ -52,11 +52,11 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
      inkscape:cx="552.23947"
-     inkscape:cy="614.89103"
+     inkscape:cy="557.74817"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1024"
+     inkscape:window-width="1366"
      inkscape:window-height="715"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
@@ -69,7 +69,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -81,7 +81,7 @@
        xml:space="preserve"
        id="flowRoot3207"
        style="font-size:144px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Verdana;-inkscape-font-specification:Verdana"
-       transform="matrix(0.98073053,0,0,0.98073053,14.983447,-41.968547)"><flowRegion
+       transform="matrix(0.98073053,0,0,0.98073053,14.983447,-53.968547)"><flowRegion
          id="flowRegion3209"><rect
            id="rect3211"
            width="667.14282"
@@ -89,31 +89,35 @@
            x="31.428572"
            y="306.64789" /></flowRegion><flowPara
          style="font-size:14px;font-weight:bold"
-         id="flowPara3615">Rodada Inicial</flowPara><flowPara
+         id="flowPara3141">Para 1 a 4 jogadores</flowPara><flowPara
+         style="font-size:14px;font-weight:bold"
+         id="flowPara3153" /><flowPara
+         style="font-size:14px;font-weight:bold"
+         id="flowPara3155">Rodada Inicial</flowPara><flowPara
          style="font-size:14px"
          id="flowPara13707" /><flowPara
          style="font-size:14px"
-         id="flowPara13677">Um jogador põe no centro do mesa uma Proposição para discussão.</flowPara><flowPara
+         id="flowPara13677">Coloque o Baralho de Proposições de um lado da mesa. Coloque o Baralho de Ações do outro lado da mesa. Um jogador põe no centro do mesa uma Proposição para discussão.</flowPara><flowPara
          style="font-size:14px"
          id="flowPara13709" /><flowPara
          style="font-size:14px"
-         id="flowPara13679">Em seguida, cada jogador saca 4 cartas em seus respectivos turnos do outro Baralho.</flowPara><flowPara
-         style="font-size:14px"
-         id="flowPara13711" /><flowPara
+         id="flowPara13679">Em seguida, cada jogador saca 4 cartas em seus respectivos turnos do Baralho de Ações para Sua Mão.</flowPara><flowPara
          style="font-size:14px;font-weight:bold"
-         id="flowPara13681">O Turno</flowPara><flowPara
+         id="flowPara13681" /><flowPara
+         style="font-size:14px;font-weight:bold"
+         id="flowPara3131">O Turno</flowPara><flowPara
          style="font-size:14px"
          id="flowPara13713" /><flowPara
          style="font-size:14px"
-         id="flowPara13683">No seu turno você pode baixar 01 carta de Deputado ou 01 carta de Comissão para somar pontos e tentar deliberar uma proposição. Você também pode baixar uma carta de Evento.</flowPara><flowPara
+         id="flowPara13683">No seu turno você pode baixar 01 carta de Deputado ou 01 carta de Estratégia para Sua Mesa para somar pontos e tentar deliberar uma proposição. Vocẽ não é obrigado a baixar cartas em seu turno. Escolha bem sua estratégia.</flowPara><flowPara
          style="font-size:14px"
          id="flowPara13685" /><flowPara
          style="font-size:14px"
-         id="flowPara13715">Os jogadores se alternam em turnos em sentido horário.</flowPara><flowPara
+         id="flowPara13715">Os jogadores se alternam em turnos em sentido horário. </flowPara><flowPara
          style="font-size:14px"
          id="flowPara13687" /><flowPara
          style="font-size:14px;font-weight:bold"
-         id="flowPara13717">A Contagem de Pontos</flowPara><flowPara
+         id="flowPara13717">A Deliberação</flowPara><flowPara
          style="font-size:14px"
          id="flowPara13689" /><flowPara
          style="font-size:14px"
@@ -121,11 +125,11 @@
          style="font-size:14px"
          id="flowPara13691" /><flowPara
          style="font-size:14px"
-         id="flowPara13721">As cartas de Órgão/Comissões valem 10 pontos. Mas elas você só pode baixar esta carta em jogo se a Proposição em questão estiver sendo discutida na Comissão que você deseja baixar.</flowPara><flowPara
+         id="flowPara13723">As cartas de Deputados valem 3 pontos.</flowPara><flowPara
          style="font-size:14px"
-         id="flowPara13693" /><flowPara
+         id="flowPara3100" /><flowPara
          style="font-size:14px"
-         id="flowPara13723">As cartas de Deputados podem valem 3 pontos. Mas se o Deputado fizer parte da Comissão em que está sendo discutida a Proposição, seu valor aumenta para 5 pontos.</flowPara><flowPara
+         id="flowPara3102">As cartas de Comissões valem 10 pontos. Mas você só pode baixar esta carta em jogo se a Proposição em questão estiver sendo discutida na Comissão que você deseja baixar.</flowPara><flowPara
          style="font-size:14px"
          id="flowPara13695" /><flowPara
          style="font-size:14px"
@@ -133,7 +137,7 @@
          style="font-size:14px"
          id="flowPara3099" /><flowPara
          style="font-size:14px"
-         id="flowPara13697">Cartas de Evento podem alterar a pontuação de outras ou gerar efeitos variados no jogo. Preste atenção no texto de cada carta para aprender seu efeito.</flowPara><flowPara
+         id="flowPara13697">Cartas de Estratégia podem alterar a pontuação de outras cartas ou gerar efeitos variados no jogo. Preste atenção no texto de cada carta para aprender seu efeito.</flowPara><flowPara
          style="font-size:14px"
          id="flowPara3103" /><flowPara
          style="font-size:14px;font-weight:bold"
@@ -141,21 +145,13 @@
          style="font-size:14px"
          id="flowPara13699" /><flowPara
          style="font-size:14px"
-         id="flowPara13729">Existem duas modalidades de jogo possíveis:</flowPara><flowPara
-         style="font-size:14px"
-         id="flowPara13701" /><flowPara
-         style="font-size:14px"
-         id="flowPara13731">1. O jogo termina quando o primeiro jogador conseguir aprovar 5 proposições</flowPara><flowPara
-         style="font-size:14px"
-         id="flowPara13703" /><flowPara
-         style="font-size:14px"
-         id="flowPara13733">2. O jogo termina quando as cartas de proposição acabarem.</flowPara><flowPara
+         id="flowPara13731">O jogo termina quando algum jogador conseguir deliberar 5 proposições.</flowPara><flowPara
          style="font-size:14px"
          id="flowPara13705" /><flowPara
          style="font-size:14px"
-         id="flowPara13735">Em ambas, os jogadores somam as pontuações das Proposições que aprovaram. Se destaca o jogador com maior quantidade de pontos, independente da quantidade de proposições que conseguiu deliberar.</flowPara></flowRoot>    <g
+         id="flowPara13735">Então, os jogadores somam as pontuações das Proposições que aprovaram a fim de montar um placar do jogo. Se destaca o jogador com maior quantidade de pontos, independente da quantidade de proposições que conseguiu deliberar.</flowPara></flowRoot>    <g
        id="g3110"
-       transform="translate(8.2771179,0)">
+       transform="matrix(0.90005322,0,0,0.90005322,44.63477,2.736283)">
       <g
          style="fill:#ffffff;fill-opacity:1;filter:url(#filter3842)"
          id="g3810"
@@ -496,5 +492,16 @@
          id="tspan3108"
          x="51.889786"
          y="1008.3461">Baixe sua versão atualizada em  www.deliberatorio.com.br</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Zrnic Rg;-inkscape-font-specification:Zrnic Rg"
+       x="45.714287"
+       y="275.21933"
+       id="text3145"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3149"
+         x="45.714287"
+         y="275.21933" /></text>
   </g>
 </svg>
